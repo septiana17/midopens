@@ -31,22 +31,15 @@
                 </div> --}}
               </div>
               <div class="form-group">
-                <i class="fas fa-id-card"></i>
-                <input class="myInput" type="number" placeholder="NRP" id="nrp" required>
-                {{-- <div class="invalid-feedback">
-                   <small id="emailHelp" class="form-text text-muted">*Pastikan Nama Lengkapmu Suda Benar.</small>
-                </div> --}}
-              </div>
-              <div class="form-group">
-                <i class="fas fa-graduation-cap"></i>
-                <input class="myInput" type="text" placeholder="Jurusan" id="jurusan" required>
+                <i class="fas fa-building"></i>
+                <input class="myInput" type="text" placeholder="Perusahaan" id="perusahaan" required>
                 {{-- <div class="invalid-feedback">
                    <small id="emailHelp" class="form-text text-muted">*Pastikan Nama Lengkapmu Suda Benar.</small>
                 </div> --}}
               </div>
               <div class="form-group">
                 <i class="fas fa-envelope"></i>
-                <input class="myInput" type="text" placeholder="EmailStudentPENS" id="email" required>
+                <input class="myInput" type="text" placeholder="EmailKerja" id="email" required>
                 <div class="invalid-feedback">
                   Please enter your email.
                 </div>

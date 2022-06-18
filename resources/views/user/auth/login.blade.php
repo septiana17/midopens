@@ -7,8 +7,7 @@
   <title>Login | User</title>
 
   <!-- Bootstrap -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
-    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <!-- Style CSS -->
   <link rel="stylesheet" href="{{ asset('css/stylelogin.css') }}">
 </head>
@@ -26,7 +25,7 @@
                 <i class="fas fa-envelope"></i>
                 <input class="myInput" type="text" placeholder="Email" id="email" required>
                 <div class="invalid-feedback">
-                  Please enter your email.
+                  Masukkan email.
                 </div>
               </div>
               <div class="form-group">
@@ -37,9 +36,12 @@
               <div class="form-group">
                 <label>
                   <input type="checkbox" name="remember" id="remember" required>
-                  <small>I agree to Term & Conditions</small>
+                  <small>Saya setuju dengan Syarat & Ketentuan</small>
                   </input>
                   <div class="invalid-feedback">You must chcek the box.</div>
+                </label>
+                <label>
+                  <small>Apakah belum memiliki akun? <a href="#" data-toggle="modal" data-target="#exampleModal" > Register.</a></small>
                 </label>
               </div>
               <input type="submit" class="button" value="Login">
@@ -59,12 +61,29 @@
   </div>
   </div>
 
+
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex justify-content-between">
+          <button type="button" class="btn btn-outline-primary">Mahasiswa PENS</button>
+          <button type="button" class="btn btn-outline-primary">Pengunjung</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <script src="https://kit.fontawesome.com/9706c69056.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" crossorigin="anonymous">
-  </script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
-    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 
 </html>

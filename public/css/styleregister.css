@@ -11,7 +11,7 @@ body {
 .container {
     position: absolute;
     max-width: 800px;
-    height: 500px;
+    height: 100%;
     margin: auto;
     top: 50%;
     left: 50%;
@@ -42,7 +42,7 @@ body {
 
 .myLeftCtn header {
     color: #00ADB5;
-    font-size: 25px;
+    font-size: 50px;
     font-weight: 700;
     margin-bottom: 20px;
 }
@@ -63,7 +63,7 @@ body {
 
 .myRightCtn header {
     color: #fff;
-    font-size: 44px;
+    font-size: 75px;
 }
 
 .box {
@@ -73,7 +73,7 @@ body {
 }
 
 .myLeftCtn .myInput {
-    width: 230px;
+    width: 400px;
     border-radius: 25px;
     padding: 10px;
     padding-left: 50px;

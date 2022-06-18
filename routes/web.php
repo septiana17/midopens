@@ -56,6 +56,10 @@ Route::get('/view_text', function () {
 
 Route::get('/login', [AuthController::class, 'login']);
 
+Route::get('/register', [AuthController::class, 'register']);
+
+Route::get('/register-pengunjung', [AuthController::class, 'register_pengunjung']);
+
 Route::group(['prefix' => '/admin','middleware'=>'auth'], function ()
 {
     # dashboard utama

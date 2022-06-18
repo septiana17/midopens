@@ -61,7 +61,7 @@
           <h3 class="section-subheading text-muted">The most popular post on online wall magazine .</h3>
         </div>
         <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
+          <div class="swiper-wrapper" style="margin-right: 90px;">
             <div class="swiper-slide">
               <div class="col-lg-3 col-sm-3">
                 <div class="card" style="width: 18rem;">
@@ -141,7 +141,7 @@
             </div>
             <div class="swiper-slide">
               <div class="col-lg-3 col-sm-3">
-                <div class="card">
+                <div class="card" style="width: 18rem;">
                   <img class="card-img-top" src="{{ asset('/img/photo3.jpg') }}"
                     alt="Card image cap">
                   <div class="card-body">
@@ -182,7 +182,7 @@
         <!-- card -->
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-it.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Informatika</h6>
@@ -191,7 +191,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-tekkom.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Komputer</h6>
@@ -200,7 +200,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-elka.jpg') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Elektronika</h6>
@@ -209,7 +209,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-elin.jpg') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Elektro Industri</h6>
@@ -218,7 +218,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-telkom.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Telekomunikasi</h6>
@@ -227,7 +227,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-meka.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Mekatronika</h6>
@@ -236,7 +236,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-mmb.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Multimedia Broadcasting</h6>
@@ -245,7 +245,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-spe.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Sistem Pembangkit Energi</h6>

@@ -20,6 +20,8 @@
     <!-- style -->
     <link rel="stylesheet" href="styletext.css" />
 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
 </head>
 
 <body id="page-top">
@@ -72,29 +74,27 @@
                 <!-- Left col -->
                 <section class="col-lg-2" style="padding-top: 5px; padding-bottom: 0">
                     <div class="row">
-                        <div class="text-truncate">
                             <span style="font-weight: bold">Share to Social Media</span>
-                            <div class="text-center" style="padding-top: 5px; padding-bottom: 0">
-                                <a href="" class="text-black me-3" style="text-decoration: none">
+                            <div class="text-center" style="padding-top: 10px; padding-bottom: 0">
+                                <a href="#" class="icon" style="font-size: 25px;">
                                     <i class="fab fa-facebook-f"></i>
                                 </a>
                             </div>
-                            <div class="text-center" style="padding-top: 5px; padding-bottom: 0">
-                                <a href="" class="text-black me-3" style="text-decoration: none">
+                            <div class="text-center" style="padding-top: 10px; padding-bottom: 0">
+                                <a href="" class="icon" style="font-size: 25px;">
                                     <i class="fab fa-twitter"></i>
                                 </a>
                             </div>
-                            <div class="text-center" style="padding-top: 5px; padding-bottom: 0">
-                                <a href="" class="text-black me-3" style="text-decoration: none">
+                            <div class="text-center" style="padding-top: 10px; padding-bottom: 0">
+                                <a href="" class="icon" style="font-size: 25px;">
                                     <i class="fab fa-instagram"></i>
                                 </a>
                             </div>
-                            <div class="text-center" style="padding-top: 5px; padding-bottom: 0">
-                                <a href="" class="text-black me-3" style="text-decoration: none">
+                            <div class="text-center" style="padding-top: 10px; padding-bottom: 0">
+                                <a href="" class="icon" style="font-size: 25px;">
                                     <i class="fa fa-download"></i>
                                 </a>
                             </div>
-                        </div>
                     </div>
                 </section>
 
@@ -113,28 +113,42 @@
                                 <a href="" class="text-black me-2" style="text-decoration: none">
                                     <i class="fa-solid fa-comment-dots"></i>
                                 </a>
-                                Comments
+                                Komentar
                             </span>
                         </div>
                     </div>
                     <div class="progress" style="height: 5px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
-                            aria-valuemin="0" aria-valuemax="100" style="background-color: black;"></div>
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                            aria-valuemin="0" aria-valuemax="100"></div>
                     </div>
-                    <div class="row">
-                        <div class="text-truncate" style="margin-top: 200px">
-                            <span style="font-weight: bold">
-                                <a href="" class="text-black me-2" style="text-decoration: none">
-                                    0
-                                    <i class="fa-solid fa-heart"></i>
-                                </a>
-                                0 Comments
-                            </span>
-                        </div>
-                    </div>
+                    <ul class="list-unstyled activity-list">
+                        <li>
+                            <header>Name</header>
+                            <p><a href="#"></a> Bagus sekali <span class="float-right">10:00</span></p>
+                        </li>
+                        <li>
+                            <header>Name</header>
+                            <p><a href="#"></a> Bagus sekali <span class="float-right">10:00</span></p>
+                        </li>
+                        <li>
+                            <header>Name</header>
+                            <p><a href="#"></a> Bagus sekali <span class="float-right">10:00</span></p>
+                        </li>
+                    </ul>
                     <div class="progress" style="height: 1px;">
-                        <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
+                        <div class="progress-bar bg-dark" role="progressbar" style="width: 100%;" aria-valuenow="100"
                             aria-valuemin="0" aria-valuemax="100" style="background-color: #EEEEEE;"></div>
+                    </div>
+                    <div style="padding-top: 10px">
+                        <div class="btn-group">
+                            <button class="btn btn-default"><i class="fa fa-thumbs-up "></i> Suka </button>
+                            <button class="btn btn-default" id="btn-komentartext"><i class="fa fa-comment-dots"></i> Komentar </button>
+                        </div>
+                        <form action="" method="POST" id="komentartext" rows="5" style="margin-top: 10px; display: none;">
+                            <textarea class="form-control" name="komentar" ></textarea>
+                            <input type="submit" class="btn btn-primary" value="kirim" style="margin-top: 10px">
+                        </form>
+
                     </div>
                 </section>
 
@@ -324,6 +338,15 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <!-- Font Awesome icons (free version)-->
     <script src="https://kit.fontawesome.com/9706c69056.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#btn-komentartext').click(function() {
+                $('#komentartext').toggle('slide');
+            });
+        });
+    </script>
 </body>
 
 </html>
