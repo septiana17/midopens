@@ -84,7 +84,7 @@ body {
   line-height: var(--bs-body-line-height);
   color: var(--bs-body-color);
   text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
+  background-color: #F9F9F9;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -236,11 +236,11 @@ sup {
 }
 
 a {
-  color: #ffc800;
+  color: #000000;
   text-decoration: underline;
 }
 a:hover {
-  color: #cca000;
+  color: #00ADB5;
 }
 
 a:not([href]):not([class]), a:not([href]):not([class]):hover {
@@ -3030,33 +3030,34 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #393E46;
-  background-color: #ffffff;
+  border-radius: 10px;
+  color: #ffffff;
+  background-color: #3278f0;
   /* border-color: #ffc800; */
 }
 .btn-primary:hover {
-  color: #fff;
-  background-color: #0199a1;
+  color: #ffffff;
+    background-color: #1760dd;
   /* border-color: #cca000; */
 }
 .btn-check:focus + .btn-primary, .btn-primary:focus {
   color: #fff;
-  background-color: #d9aa00;
-  border-color: #cca000;
-  box-shadow: 0 0 0 0.25rem rgba(255, 208, 38, 0.5);
+  background-color: #3278f0;
+  border-color: #3278f0;
+  box-shadow: 0 0 0 0.25rem rgba(37, 86, 232, 0.5);
 }
 .btn-check:checked + .btn-primary, .btn-check:active + .btn-primary, .btn-primary:active, .btn-primary.active, .show > .btn-primary.dropdown-toggle {
   color: #fff;
-  background-color: #cca000;
-  border-color: #bf9600;
+  background-color: #3278f0;
+  border-color: #3278f0;
 }
 .btn-check:checked + .btn-primary:focus, .btn-check:active + .btn-primary:focus, .btn-primary:active:focus, .btn-primary.active:focus, .show > .btn-primary.dropdown-toggle:focus {
-  box-shadow: 0 0 0 0.25rem rgba(255, 208, 38, 0.5);
+  box-shadow: 0 0 0 0.25rem rgba(38, 85, 255, 0.5);
 }
 .btn-primary:disabled, .btn-primary.disabled {
   color: #fff;
-  background-color: #ffc800;
-  border-color: #ffc800;
+  background-color: #3278f0;
+  border-color: #3278f0;
 }
 
 .btn-secondary {
@@ -3120,6 +3121,7 @@ textarea.form-control-lg {
 }
 
 .btn-info {
+  border-radius: 10px;
   color: #fff;
   background-color: #0dcaf0;
   border-color: #0dcaf0;
@@ -3150,6 +3152,7 @@ textarea.form-control-lg {
 }
 
 .btn-warning {
+  border-radius: 10px;
   color: #fff;
   background-color: #ffc800;
   border-color: #ffc800;
@@ -3180,6 +3183,7 @@ textarea.form-control-lg {
 }
 
 .btn-danger {
+  border-radius: 10px;
   color: #fff;
   background-color: #dc3545;
   border-color: #dc3545;
@@ -11301,11 +11305,11 @@ p {
 }
 
 .page-section {
-  padding: 6rem 0;
+  padding: 1rem 0;
 }
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
-  margin-top: 0;
+  margin-top: 6rem;
   margin-bottom: 1rem;
 }
 .page-section h3.section-subheading, .page-section .section-subheading.h3 {
@@ -11389,7 +11393,7 @@ p {
   #mainNav.navbar-shrink {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #00ADB5;
   }
   #mainNav.navbar-shrink .navbar-brand {
     font-size: 1.25em;
@@ -11410,6 +11414,7 @@ header.masthead {
   padding-bottom: 6rem;
   text-align: center;
   color: #fff;
+  /* background-color: #00ADB5; */
   background-image: url("../img/bg-pens-3.png");
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -11857,4 +11862,25 @@ section#contact form#contactForm :-ms-input-placeholder {
   border-radius: 50%;
   background: #00ADB5;
   animation: animation-1 2s linear infinite;
+}
+
+/* .myRightCtn {
+  position: relative;
+  background-image: linear-gradient(45deg, #00ADB5, #4baeb4);
+  border-radius: 10px;
+  height: 100%;
+  padding: 25px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -50px;
+} */
+
+header {
+  color: #087990;
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
 }

@@ -18,6 +18,8 @@
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
 </head>
 
 <body id="page-top">
@@ -35,7 +37,7 @@
           <li class="nav-item"><a class="nav-link" href="#">Public Information</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Internal Event</a></li>
           <li class="nav-item"><a class="nav-link" href="#">External Event</a></li>
-          <li class="nav-item"><a class="btn btn-primary btn-md" href="#">Login</a></li>
+          <li class="nav-item"><a class="btn btn-info btn-md" href="#">Login</a></li>
         </ul>
       </div>
     </div>
@@ -44,56 +46,80 @@
   <!-- Masthead-->
   <header class="masthead">
     <div class="container">
-      <div class="masthead-subheading">Welcome To MidoPENS !</div>
-      <div class="masthead-heading text-uppercase">It's Nice To Meet You</div>
+      <div class="masthead-subheading">MidoPENS !</div>
+      <div class="masthead-heading text-uppercase">Selamat Datang</div>
     </div>
   </header>
 
   <!-- Services-->
   <section class="page-section">
     <div class="header-hero">
-      <div class="shape shape-1"></div>
-      <div class="shape shape-6"></div>
+      {{-- <div class="shape shape-1"></div>
+      <div class="shape shape-6"></div> --}}
       <div class="container">
         <div class="text-center">
-          <h2 class="section-heading text-uppercase">Popular Post</h2>
-          <h3 class="section-subheading text-muted">The most popular post on online wall magazine .</h3>
+          <h2 class="section-heading text-uppercase">Postingan Terkini</h2>
+          <h3 class="section-subheading text-muted">Informasi berita yang ada di semua jurusan PENS akan di posting pada MidoPENS yang nantinya mempermudah kita untuk menerima berbagai macam informasi terbaru dan terkini . </h3>
         </div>
 
-        <div class="row text-center">
+        <div class="row d-flex justify-content-between">
 
-          <div class="col-lg-3 col-sm-3">
-            <div class="card" style="width: 18rem;">
+          <div class="col-sm-3">
+            <div class="card" style="width: 16rem; border-radius: 10px;">
               <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Anything</p>
+              <div class="card-body text-left">
+                <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik Informatika</button>
+                 <div class="row">
+                    <p>9 Mei 2022</p>
+                </div>
+                <div class="row">
+                    <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i class="fas fa-arrow-right"></i></p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-3">
-            <div class="card" style="width: 18rem;">
+          <div class="col-sm-3">
+            <div class="card" style="width: 16rem; border-radius: 10px;">
               <img class="card-img-top" src="{{ asset('/img/photo2.png') }}" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Anything 1</p>
+              <div class="card-body text-left">
+                <button type="button" class="btn btn-warning" style="padding-top: -30px;">Teknik Elektronika</button>
+                 <div class="row">
+                    <p>9 Mei 2022</p>
+                </div>
+                <div class="row">
+                    <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i class="fas fa-arrow-right"></i></p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-3">
-            <div class="card" style="width: 18rem;">
+          <div class="col-sm-3">
+            <div class="card" style="width: 16rem; border-radius: 10px;">
               <img class="card-img-top" src="{{ asset('/img/photo3.jpg') }}" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Anything 2</p>
+              <div class="card-body text-left">
+                <button type="button" class="btn btn-danger" style="padding-top: -30px;">Teknik Elektro Industri</button>
+                 <div class="row">
+                    <p>9 Mei 2022</p>
+                </div>
+                <div class="row">
+                    <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i class="fas fa-arrow-right"></i></p>
+                </div>
               </div>
             </div>
           </div>
 
-          <div class="col-lg-3 col-sm-3">
-            <div class="card" style="width: 18rem;">
+          <div class="col-sm-3">
+            <div class="card" style="width: 16rem; border-radius: 10px;">
               <img class="card-img-top" src="{{ asset('/img/photo4.jpg') }}" alt="Card image cap">
-              <div class="card-body">
-                <p class="card-text">Anything 3</p>
+              <div class="card-body text-left">
+                <button type="button" class="btn btn-info" style="padding-top: -30px;">Teknik Komputer</button>
+                 <div class="row">
+                    <p>9 Mei 2022</p>
+                </div>
+                <div class="row">
+                    <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i class="fas fa-arrow-right"></i></p>
+                </div>
               </div>
             </div>
           </div>
@@ -101,8 +127,8 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-8 mx-auto text-center">
-            <p class="large text-muted">See All The Post <i class="fas fa-arrow-right"></i> </p>
+          <div class="col-lg-8 mx-auto text-center" style="padding-top: 50px;">
+            <p class="large text-muted"><a href="#"> See All The Post <i class="fas fa-arrow-right"></i> </a></p>
           </div>
         </div>
 
@@ -110,46 +136,56 @@
     </div>
   </section>
 
-  <!-- Team-->
-  <section class="page-section bg-light">
-      <div class="header-hero">
-      <div class="shape shape-2"></div>
-      <div class="shape shape-3"></div>
-    <div class="container">
-      <div class="text-center">
-        <h2 class="section-heading text-uppercase">Popular Videos</h2>
-        <h3 class="section-subheading text-muted">The most popular video on online wall magazine .</h3>
-      </div>
-
+  <!-- Videos-->
+  <section class="page-section">
+    <div class="container justify-content-between">
       <div class="row">
 
-        <div class="col-lg-4">
-          <div class="team-member">
-            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-            <h4>Video</h4>
-            <p class="text-muted">See More <i class="fas fa-arrow-right"></i></p>
+        <!-- Left-->
+        <section class="col-lg-7">
+          <div class="content">
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <iframe width="700px" height="400px" class="d-block w-100"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+              </div>
+              <div class="carousel-item">
+                <iframe width="700px" height="400px" src="https://www.youtube.com/embed/Oro8Q887UwE" class="d-block w-100"></iframe>
+              </div>
+              <div class="carousel-item">
+                <iframe width="700px" height="400px" class="d-block w-100"
+                src="https://www.youtube.com/embed/tgbNymZ7vqY">
+                </iframe>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-target="#carouselExampleFade" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-target="#carouselExampleFade" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </button>
           </div>
-        </div>
+          </div>
+        </section>
 
-        <div class="col-lg-4">
-          <div class="team-member">
-            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-            <h4>Video</h4>
-            <p class="text-muted">See More <i class="fas fa-arrow-right"></i></p>
-          </div>
-        </div>
-
-        <div class="col-lg-4">
-          <div class="team-member">
-            <iframe width="420" height="345" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-            <h4>Video</h4>
-            <p class="text-muted">See More <i class="fas fa-arrow-right"></i></p>
-          </div>
-        </div>
+        <!-- Right-->
+        <section class="col-lg-5">
+          {{-- <div class="myRightCtn">
+            <div class="box">
+                <header class="text-light text-center">Video Terkini</header>
+                <p class="text-center" style="margin-top: 75px;">Menampilkan video serta live streaming dari kegiatan yang diselenggarakan oleh PENS.</p>
+            </div>
+          </div> --}}
+          <header> Video Terkini </header>
+          <p class="text-center" style="margin-top: 50px; color: #053f4b; font-size: 25px;">Menampilkan video serta live streaming dari kegiatan yang diselenggarakan oleh PENS.</p>
+        </section>
 
       </div>
     </div>
-      </div>
   </section>
 
   <!-- Footer -->
@@ -189,7 +225,7 @@
 
     <!-- Section: Links  -->
     <section class="">
-      <div class="container text-center text-md-start mt-5">
+      <div class="container text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
@@ -271,11 +307,13 @@
   </footer>
   <!-- Footer -->
 
-  <!-- Bootstrap core JS-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
 </body>
 
 </html>
