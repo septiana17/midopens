@@ -85,7 +85,8 @@ body {
     line-height: var(--bs-body-line-height);
     color: var(--bs-body-color);
     text-align: var(--bs-body-text-align);
-    background-color: var(--bs-body-bg);
+    /* background-color: var(--bs-body-bg); */
+    background-color: #F9F9F9;
     -webkit-text-size-adjust: 100%;
     -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
 }
@@ -5746,7 +5747,7 @@ fieldset:disabled .btn {
     color: #fff;
     text-align: center;
     white-space: nowrap;
-    background-color: #ffc800;
+    background-color: #000;
     transition: width 0.6s ease;
 }
 
@@ -12298,7 +12299,7 @@ p {
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #00ADB5;
 }
 
 #mainNav .navbar-toggler {
@@ -12355,7 +12356,7 @@ p {
     #mainNav.navbar-shrink {
         padding-top: 1rem;
         padding-bottom: 1rem;
-        background-color: #212529;
+        background-color: #00ADB5;
     }
 
     #mainNav.navbar-shrink .navbar-brand {
@@ -12377,11 +12378,12 @@ p {
 }
 
 header.masthead {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
     text-align: center;
     color: #fff;
-    background-image: url("../img/bg-pens-5.png");
+    /* background-image: url("../img/bg-pens-5.png"); */
+    background-color: #00ADB5;
     background-repeat: no-repeat;
     background-attachment: scroll;
     background-position: center center;
@@ -12406,8 +12408,8 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
     header.masthead {
-        padding-top: 20rem;
-        padding-bottom: 12.5rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
     }
 
     header.masthead .masthead-subheading {
@@ -12912,5 +12914,4 @@ section#contact form#contactForm :-ms-input-placeholder {
 .swiper {
     width: 100%;
     height: 100%;
-    background-color: #fff;
 }
