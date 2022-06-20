@@ -1,0 +1,193 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap');
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:active, :hover, :focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+}
+
+/* Variable Define */
+:root {
+    --primary-color: #96b1a8;
+    --third-color: #21333e;
+    --four-color: #b7b4ad;
+    --five-color: #93cfbf;
+    --six-color: #eeebe4;
+    --gray-color: #e2e2e2;
+    --white-color: #fff;
+    --primary-font: 'Montserrat', sans-serif;
+    --secondary-font: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--secondary-font);
+    font-size: 100%;
+    font-height: 400;
+    overflow: hidden;
+}
+
+/* Custom Css Design */
+h1 {
+    font-size: 4.5rem;
+    font-weight: 900;
+    margin-bottom: 2rem;
+    color: var(--six-color);
+    text-transform: capitalize;
+}
+
+h1 span {
+    color: var(--five-color);
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: 900;
+    padding: 1rem 0;
+    line-height: 1.2;
+    color: var(--third-color);
+    text-transform: capitalize;
+}
+
+h4 {
+    font-size: 1.3rem;
+    font-weight: 800;
+    padding: 1rem 0;
+    padding: 1rem 0;
+    line-height: 1.2;
+    color: var(--third-color);
+    text-transform: capitalize;
+}
+
+h5 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--six-color);
+    text-transform: uppercase;
+}
+
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6;
+    color: var(--gray-color);
+    font-family: var(--primary-font);
+    margin-top: 1rem;
+}
+
+.main-btn {
+    position: relative;
+    z-index: 2;
+    padding: 0.625rem 1.563rem;
+    background-color: var(--six-color);
+    border-radius: 0.25rem;
+    border: 0.063rem solid;
+    border-color: var(--six-color);
+    color: var(--third-color);
+    font-weight: 500;
+    -webkit-transition: all .4s ease-out 0s;
+    -o-transition: all .4s ease-out 0s;
+    -moz-transition: all .4s ease-out 0s;
+    transition: all .4s ease-out 0s;
+}
+
+.main-btn:hover {
+    background-color: var(--five-color);
+    color: var(--white-color);
+    border-color: var(--five-color);
+}
+
+.heading h5 {
+    color: var(--five-color);
+}
+
+/* Top Header */
+.navbar.top {
+    position: relative;
+    z-index: 5;
+    height: 3.125rem;
+    padding: 0rem;
+    background: var(--third-color);
+}
+.navbar.top ul li a {
+    font-size: 0.85rem;
+    font-weight: 400;
+    color: var(--six-color);
+    font-family: var(--primary-color);
+}
+
+.navbar.top ul li a:hover{
+    color: var(--four-color);
+}
+
+/* Main Navigation */
+.navigation-wrap {
+    position: fixed;
+    padding: 1rem 0;
+    width: 100%;
+    top: 3.125rem;
+    z-index: 1000;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+
+.navigation-wrap .nav-item {
+    transition: all 200ms linear;
+    padding: 0.4375rem;
+}
+
+.navigation-wrap .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    padding-top: 1rem;
+    font-family: var(--primary-color);
+    text-transform: capitalize;
+    color: var(--white-color);
+}
+
+.navigation-wrap .nav-link.active,
+.navigation-wrap .nav-link:hover {
+    color: var(--five-color);
+}
+
+/* Change navbar styling on scroll */
+.navigation-wrap.scrolle-on {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--third-color);
+    box-shadow: 0 0.125rem 1.75rem 0 rgba(0, 0, 0, 0.09);
+    transition: all .15s ease-in-out 0s;
+}
+
+/* Yop Section Design */
+
+.top-wrapper {
+    background-image: url('../img/bg-1.jpg');
+    /* width: 100%; */
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    opacity: 1;
+}
