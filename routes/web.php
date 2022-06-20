@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\Admin\DashboardController;
+use App\Http\Controllers\CommentController;
 use App\Http\Controllers\ContentController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\User\AuthController;
@@ -88,4 +89,9 @@ Route::group(['prefix' => '/admin','middleware'=>'auth'], function ()
     Route::delete('/category/content/delete/{id}', [DashboardController::class, 'deleteCategory'])->name('admin.category.delete');
 });
 
-
+Route::group(['prefix' => '/comments', 'middleware'=>'auth'], function ()
+{
+    Route::post('/store', [CommentController::class, 'store'])->name('comments.store');
+    Route::put('/update/{id}', [CommentController::class, 'update'])->name('comments.update');
+    Route::delete('/delete/{id}', [CommentController::class, 'destroy'])->name('comments.delete');
+});
