@@ -24,7 +24,8 @@
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo putih.png') }}" alt="logo" /> MidoPENS
+      <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo putih.png') }}" alt="logo" />
+        MidoPENS
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -52,19 +53,32 @@
             <img class="card-img-bottom m-auto" style="width: 100%; height: 100%;"
               src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
           </div>
-          <div>
+          <div class="btn-group" style="font-size: 25px;">
             <a href="#" class="me-4">
-              <i class="fab fa-instagram"></i>
+              <i class="fab fa-facebook"></i>
             </a>
             <a href="#" class="me-4">
               <i class="fab fa-twitter"></i>
             </a>
             <a href="#" class="me-4">
-              <i class="fab fa-facebook"></i>
+              <i class="fab fa-instagram"></i>
             </a>
             <a href="#" class="me-4">
-              <i class="fab fa-share"></i>
+              <i class="fa fa-download"></i>
             </a>
+
+            <div class="justify-content-left" style="padding-top: 5px; margin-left: 220px;">
+              <div class="btn-group">
+                <button class="btn btn-default"><i class="fa fa-thumbs-up "></i> Suka </button>
+                <button class="btn btn-default" id="btn-komentartext"><i class="fa fa-comment-dots"></i>
+                  Komentar </button>
+              </div>
+              <form action="" method="POST" id="komentartext" rows="5"
+                style="margin-top: 10px; display: none;">
+                <textarea class="form-control" name="komentar"></textarea>
+                <input type="submit" class="btn btn-primary" value="kirim" style="margin-top: 10px">
+              </form>
+            </div>
           </div>
         </section>
 
@@ -74,28 +88,151 @@
             <h2 class="section-heading text-uppercase"> Judul </h2>
           </div>
           <div class="row" style="padding-top: 20px;">
-              <div class="card" style="border-radius: 10px">
-                <div class="card-body">
-                      <button type="button" class="btn btn-info"
-                        style="padding-top: -30px;">Teknik Komputer</button>
-                      <div class="row">
-                        <h6 style="padding-top: 10px;">Septiana Dyah Anissawati</h6>
-                        <p>Picture</p>
-                        <p>9 Mei 2022</p>
-                      </div>
-                      <div class="row">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta illum recusandae iste suscipit repudiandae corporis, enim quos eum repellat dignissimos pariatur impedit deleniti nobis, veniam mollitia earum consequuntur, reiciendis praesentium qui voluptatum laudantium quo quae totam aliquam? Quisquam incidunt a at, voluptatem cumque nobis reprehenderit numquam corrupti, id maxime labore. Voluptatum sint incidunt molestiae minus cumque, reiciendis dolores similique debitis vel ipsa repellendus voluptates accusamus nobis et.</p>
-                      </div>
+            <div class="card" style="border-radius: 10px">
+              <div class="card-body">
+                <button type="button" class="btn btn-info" style="padding-top: -30px;">Teknik
+                  Komputer</button>
+                <div class="row">
+                  <h6 style="padding-top: 10px;">Septiana Dyah Anissawati</h6>
+                  <p>Picture</p>
+                  <p>9 Mei 2022</p>
+                </div>
+                <div class="row">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta illum recusandae
+                    iste suscipit repudiandae corporis, enim quos eum repellat dignissimos pariatur
+                    impedit deleniti nobis, veniam mollitia earum consequuntur, reiciendis
+                    praesentium qui voluptatum laudantium quo quae totam aliquam? Quisquam incidunt
+                    a at, voluptatem cumque nobis reprehenderit numquam corrupti, id maxime labore.
+                    Voluptatum sint incidunt molestiae minus cumque, reiciendis dolores similique
+                    debitis vel ipsa repellendus voluptates accusamus nobis et.</p>
                 </div>
               </div>
             </div>
+          </div>
+        </section>
+
+        <section class="page" style="margin-top: 50px;">
+          <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Nama</h5>
+                    <p class="card-text">09/09/2022</p>
+                    <p class="card-text">Some quick example text to build on the card title and
+                      make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Nama</h5>
+                    <p class="card-text">09/09/2022</p>
+                    <p class="card-text">Some quick example text to build on the card title and
+                      make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Nama</h5>
+                    <p class="card-text">09/09/2022</p>
+                    <p class="card-text">Some quick example text to build on the card title and
+                      make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Nama</h5>
+                    <p class="card-text">09/09/2022</p>
+                    <p class="card-text">Some quick example text to build on the card title and
+                      make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Nama</h5>
+                    <p class="card-text">09/09/2022</p>
+                    <p class="card-text">Some quick example text to build on the card title and
+                      make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Nama</h5>
+                    <p class="card-text">09/09/2022</p>
+                    <p class="card-text">Some quick example text to build on the card title and
+                      make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Nama</h5>
+                    <p class="card-text">09/09/2022</p>
+                    <p class="card-text">Some quick example text to build on the card title and
+                      make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Nama</h5>
+                    <p class="card-text">09/09/2022</p>
+                    <p class="card-text">Some quick example text to build on the card title and
+                      make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="card">
+                  <div class="card-body">
+                    <h5 class="card-title">Nama</h5>
+                    <p class="card-text">09/09/2022</p>
+                    <p class="card-text">Some quick example text to build on the card title and
+                      make up the bulk of the
+                      card's content.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button"
+              data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button"
+              data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </section>
 
         <!-- card -->
         <div class="row" style="padding-top: 100px; padding-bottom: 0">
           <div class="text-truncate">
             <span style="font-weight: bold"></span>
-            <p><a href="#" style="color: black">See All the Post</a><i class="fa-solid fa-arrow-right-long"></i></p>
+            <p><a href="#" style="color: black">See All the Post</a><i
+                class="fa-solid fa-arrow-right-long"></i></p>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
@@ -185,7 +322,7 @@
 
     <!-- Section: Links  -->
     <section class="">
-      <div class="container text-md-start mt-5">
+      <div class="container text-center text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
@@ -206,7 +343,7 @@
             <!-- Links -->
             <h6 class="text-uppercase fw-bold">Products</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 60px; background-color: #7c4dff; height: 2px" />
+              style="width: 30px; background-color: #7c4dff; height: 2px" />
             <p>
               <a href="#!" class="text-dark">Public Information</a>
             </p>
@@ -274,6 +411,54 @@
   <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
   <!-- Font Awesome icons (free version)-->
   <script src="https://kit.fontawesome.com/9706c69056.js" crossorigin="anonymous"></script>
+  <!--Jquery-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+  <script>
+    $(document).ready(function() {
+      $('#btn-komentartext').click(function() {
+        $('#komentartext').toggle('slide');
+      });
+    });
+  </script>
+
+  <script>
+    var multipleCardCarousel = document.querySelector(
+      "#carouselExampleControls"
+    );
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+        interval: false,
+      });
+      var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+      var cardWidth = $(".carousel-item").width();
+      var scrollPosition = 0;
+      $("#carouselExampleControls .carousel-control-next").on("click", function() {
+        if (scrollPosition < carouselWidth - cardWidth * 4) {
+          scrollPosition += cardWidth;
+          $("#carouselExampleControls .carousel-inner").animate({
+              scrollLeft: scrollPosition
+            },
+            600
+          );
+        }
+      });
+      $("#carouselExampleControls .carousel-control-prev").on("click", function() {
+        if (scrollPosition > 0) {
+          scrollPosition -= cardWidth;
+          $("#carouselExampleControls .carousel-inner").animate({
+              scrollLeft: scrollPosition
+            },
+            600
+          );
+        }
+      });
+    } else {
+      $(multipleCardCarousel).addClass("slide");
+    }
+  </script>
 </body>
 
 </html>
