@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateLikedPostTable extends Migration
+class CreateLikedContentsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,9 +13,9 @@ class CreateLikedPostTable extends Migration
      */
     public function up()
     {
-        Schema::create('liked_post', function (Blueprint $table) {
-            $table->id();
-            $table->timestamps();
+        Schema::create('liked_contents', function (Blueprint $table) {
+            $table->foreignId('content_id')->constrained();
+            $table->foreignId('user_id')->constrained();
         });
     }
 
@@ -26,6 +26,6 @@ class CreateLikedPostTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('liked_post');
+        Schema::dropIfExists('liked_contents');
     }
 }

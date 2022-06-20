@@ -37,7 +37,7 @@
           <li class="nav-item"><a class="nav-link" href="#">Public Information</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Internal Event</a></li>
           <li class="nav-item"><a class="nav-link" href="#">External Event</a></li>
-          <li class="nav-item"><a class="btn btn-info btn-md" href="#">Login</a></li>
+          <li class="nav-item"><a class="btn btn-info btn-md" href="{{route('user.login')}}">Login</a></li>
         </ul>
       </div>
     </div>

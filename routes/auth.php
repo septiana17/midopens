@@ -1,43 +1,15 @@
 <?php
 
 use App\Http\Controllers\Admin\AdminController;
-use App\Http\Controllers\Admin\DashboardController;
-use App\Http\Controllers\admin\ExternalEventController;
-use App\Http\Controllers\admin\InternalEventController;
-use App\Http\Controllers\admin\PublicInformationController;
 use App\Http\Controllers\Auth\AuthenticatedSessionController;
 use App\Http\Controllers\Auth\ConfirmablePasswordController;
 use App\Http\Controllers\Auth\EmailVerificationNotificationController;
 use App\Http\Controllers\Auth\EmailVerificationPromptController;
-use App\Http\Controllers\Auth\NewPasswordController;
-use App\Http\Controllers\Auth\PasswordResetLinkController;
-use App\Http\Controllers\Auth\RegisteredUserController;
+use App\Http\Controllers\Auth\LoginController;
+use App\Http\Controllers\Auth\RegisterController;
 use App\Http\Controllers\Auth\VerifyEmailController;
 use Illuminate\Support\Facades\Route;
-
-// Route::middleware('guest')->group(function () {
-//     Route::get('register', [RegisteredUserController::class, 'create'])
-//                 ->name('register');
-
-//     Route::post('register', [RegisteredUserController::class, 'store']);
-
-//     Route::get('login', [AuthenticatedSessionController::class, 'create'])
-//                 ->name('login');
-
-//     Route::post('login', [AuthenticatedSessionController::class, 'store']);
-
-//     Route::get('forgot-password', [PasswordResetLinkController::class, 'create'])
-//                 ->name('password.request');
-
-//     Route::post('forgot-password', [PasswordResetLinkController::class, 'store'])
-//                 ->name('password.email');
-
-//     Route::get('reset-password/{token}', [NewPasswordController::class, 'create'])
-//                 ->name('password.reset');
-
-//     Route::post('reset-password', [NewPasswordController::class, 'store'])
-//                 ->name('password.update');
-// });
+use App\Http\Controllers\User\AuthController;
 
 Route::middleware('auth')->group(function () {
     Route::get('verify-email', [EmailVerificationPromptController::class, '__invoke'])
@@ -63,6 +35,17 @@ Route::middleware('auth')->group(function () {
 // custom route
 Route::group(['prefix' => '/admin'], function ()
 {
-    Route::get('/login', [AdminController::class, 'view'])->name('login');
-    Route::post('/login', [AdminController::class, 'login'])->name('login.post');
+    Route::get('/login', [AdminController::class, 'view']);
+    Route::post('/login', [AdminController::class, 'login'])->name('admin.login.post');
 });
+
+# Tampilan Login User
+Route::get('/login', [AuthController::class, 'viewLogin'])->name('user.login');
+Route::post('/login', [LoginController::class, 'login'])->name('user.login.post');
+
+Route::get('/register', [AuthController::class, 'viewRegister'])->name('user.register');
+Route::post('/register', [RegisterController::class, 'register'])->name('user.register.post');
+
+# Tampilan Login Guest
+Route::get('/register-pengunjung', [AuthController::class, 'register_pengunjung'])->name('guest.register');
+Route::post('/register-pengunjung', [LoginController::class, 'store_pengunjung'])->name('guest.register.post');

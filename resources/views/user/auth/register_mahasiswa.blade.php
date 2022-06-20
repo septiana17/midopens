@@ -20,40 +20,41 @@
       <div class="row">
         <div class="col-md">
           <div class="myLeftCtn">
-            <form class="myForm text-center">
+            <form class="myForm text-center" method="post" action="{{route('user.register.post')}}">
+              @csrf
               <header>Form Register</header>
               <p> Selamat Datang di MidoPENS ! </p>
               <div class="form-group">
                 <i class="fas fa-user"></i>
-                <input class="myInput" type="text" placeholder="FullName" id="fullname" required>
+                <input class="myInput" name="name" type="text" placeholder="FullName" id="fullname" required>
                 {{-- <div class="invalid-feedback">
                    <small id="emailHelp" class="form-text text-muted">*Pastikan Nama Lengkapmu Suda Benar.</small>
                 </div> --}}
               </div>
               <div class="form-group">
                 <i class="fas fa-id-card"></i>
-                <input class="myInput" type="number" placeholder="NRP" id="nrp" required>
+                <input class="myInput" name="nrp" type="number" placeholder="NRP" id="nrp" required>
                 {{-- <div class="invalid-feedback">
                    <small id="emailHelp" class="form-text text-muted">*Pastikan Nama Lengkapmu Suda Benar.</small>
                 </div> --}}
               </div>
               <div class="form-group">
                 <i class="fas fa-graduation-cap"></i>
-                <input class="myInput" type="text" placeholder="Jurusan" id="jurusan" required>
+                <input class="myInput" name="jurusan" type="text" placeholder="Jurusan" id="jurusan" required>
                 {{-- <div class="invalid-feedback">
                    <small id="emailHelp" class="form-text text-muted">*Pastikan Nama Lengkapmu Suda Benar.</small>
                 </div> --}}
               </div>
               <div class="form-group">
                 <i class="fas fa-envelope"></i>
-                <input class="myInput" type="text" placeholder="EmailStudentPENS" id="email" required>
+                <input class="myInput" name="email" type="text" placeholder="EmailStudentPENS" id="email" required>
                 <div class="invalid-feedback">
                   Please enter your email.
                 </div>
               </div>
               <div class="form-group">
                  <i class="fas fa-lock"></i>
-                <input class="myInput" type="password" placeholder="Password" id="password"
+                <input class="myInput" name="password" type="password" placeholder="Password" id="password"
                 required>
               </div>
               <div class="form-group">
@@ -65,7 +66,7 @@
                 </label>
                 <br>
                 <label>
-                  <small>Apakah sudah memiliki akun? <a href="{{route('login')}}"> Login.</a></small>
+                  <small>Apakah sudah memiliki akun? <a href="{{route('user.login')}}"> Login.</a></small>
                 </label>
               </div>
               <input type="submit" class="button" value="Register">

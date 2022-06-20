@@ -23,10 +23,6 @@ Route::get('/', function () {
     return view('index'); # diganti landing page
 });
 
-// Route::get('/index', function () {
-//     return view('index'); # diganti landing page
-// });
-
 Route::get('/request', function () {
     return view('request'); # diganti landing page
 });
@@ -54,12 +50,6 @@ Route::get('/view_picture', function () {
 Route::get('/view_text', function () {
     return view('view_text'); # diganti landing page
 });
-
-Route::get('/login', [AuthController::class, 'login']);
-
-Route::get('/register', [AuthController::class, 'register']);
-
-Route::get('/register-pengunjung', [AuthController::class, 'register_pengunjung']);
 
 Route::group(['prefix' => '/admin','middleware'=>'auth'], function ()
 {
@@ -96,5 +86,6 @@ Route::group(['prefix' => '/admin','middleware'=>'auth'], function ()
     Route::get('/category', [DashboardController::class, 'viewCategory'])->name('admin.category');
     Route::post('/category/content/create', [DashboardController::class, 'createCategory'])->name('admin.category.create');
     Route::delete('/category/content/delete/{id}', [DashboardController::class, 'deleteCategory'])->name('admin.category.delete');
-
 });
+
+
