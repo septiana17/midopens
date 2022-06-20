@@ -19,7 +19,8 @@
       <div class="row">
         <div class="col-md-6">
           <div class="myLeftCtn">
-            <form class="myForm text-center">
+            <form class="myForm text-center" action="{{url('login')}}" method="POST">
+              @csrf
               <header>Login to MidoPENS</header>
               <div class="form-group">
                 <i class="fas fa-envelope"></i>
@@ -73,7 +74,7 @@
           </button>
         </div>
         <div class="modal-body d-flex justify-content-between">
-          <button type="button" class="btn btn-outline-primary">Mahasiswa PENS</button>
+          <button type="button" class="btn btn-outline-primary" onclick="location.href='{{route('user.register')}}'">Mahasiswa PENS</button>
           <button type="button" class="btn btn-outline-primary">Pengunjung</button>
         </div>
       </div>
