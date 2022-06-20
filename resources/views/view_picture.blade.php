@@ -22,7 +22,7 @@
 
 <body id="page-top">
   <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
       <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo putih.png') }}" alt="logo" /> MidoPENS
       </a>
@@ -45,95 +45,50 @@
   <section class="content">
     <div class="container">
       <div class="row">
-        <div class="text-center">
-          <h2 class="section-heading text-uppercase"> Judul </h2>
-        </div>
 
         <!-- Left col -->
-        <section class="col-lg-3" style="padding-top: 5px; padding-bottom: 0">
-          <div class="card box-shadow" style="background-color: #468df7">
-            <img class="card-img-bottom m-auto" style="width: 150px; height: 130px;"
-              src="{{ asset('/img/logo/logo-it.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h6 class="card-title text-center text-light">Teknik Informatika</h6>
-            </div>
-          </div>
-          <div class="row">
-            <div class="text-truncate">
-              <span style="font-weight: bold">Created By</span>
-              <p>Septiana Dyah Anissawati</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="text-truncate">
-              <span style="font-weight: bold">Published</span>
-              <p>9 Mei 2022</p>
-            </div>
-          </div>
-          <div class="progress" style="height: 5px;">
-            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
-              aria-valuemin="0" aria-valuemax="100" style="background-color: black;"></div>
-          </div>
-          <div class="row">
-            <div class="text-truncate">
-              <span style="font-weight: bold">Share to Social Media</span>
-              <div class="form-group">
-                <a href="" class="text-black me-4" style="text-decoration: none">
-                  <i class="fab fa-facebook-f"></i>
-                </a>
-                <a href="" class="text-black me-4" style="text-decoration: none">
-                  <i class="fab fa-twitter"></i>
-                </a>
-                <a href="" class="text-black me-4" style="text-decoration: none">
-                  <i class="fab fa-instagram"></i>
-                </a>
-                <a href="" class="text-black me-4" style="text-decoration: none">
-                  <i class="fa fa-download"></i>
-                </a>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <!-- Center col -->
         <section class="col-lg-6" style="padding-top: 5px; padding-bottom: 5px">
           <div class="card box-shadow d-flex align-items-center w-100 h-100">
             <img class="card-img-bottom m-auto" style="width: 100%; height: 100%;"
               src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
           </div>
+          <div>
+            <a href="#" class="me-4">
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a href="#" class="me-4">
+              <i class="fab fa-twitter"></i>
+            </a>
+            <a href="#" class="me-4">
+              <i class="fab fa-facebook"></i>
+            </a>
+            <a href="#" class="me-4">
+              <i class="fab fa-share"></i>
+            </a>
+          </div>
         </section>
 
-        <!-- right col -->
-        <section class="col-lg-3" style="padding-top: 5px; padding-bottom: 0">
-          <div class="row">
-            <div class="text-truncate">
-              <span style="font-weight: bold">
-                <a href="" class="text-black me-2" style="text-decoration: none">
-                  <i class="fa-solid fa-comment-dots"></i>
-                </a>
-                Comments
-              </span>
+        <!-- Right col -->
+        <section class="col-lg-6 align-items-center" style="padding-top: 5px; padding-bottom: 0">
+          <div class="text-center">
+            <h2 class="section-heading text-uppercase"> Judul </h2>
+          </div>
+          <div class="row" style="padding-top: 20px;">
+              <div class="card" style="border-radius: 10px">
+                <div class="card-body">
+                      <button type="button" class="btn btn-info"
+                        style="padding-top: -30px;">Teknik Komputer</button>
+                      <div class="row">
+                        <h6 style="padding-top: 10px;">Septiana Dyah Anissawati</h6>
+                        <p>Picture</p>
+                        <p>9 Mei 2022</p>
+                      </div>
+                      <div class="row">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta illum recusandae iste suscipit repudiandae corporis, enim quos eum repellat dignissimos pariatur impedit deleniti nobis, veniam mollitia earum consequuntur, reiciendis praesentium qui voluptatum laudantium quo quae totam aliquam? Quisquam incidunt a at, voluptatem cumque nobis reprehenderit numquam corrupti, id maxime labore. Voluptatum sint incidunt molestiae minus cumque, reiciendis dolores similique debitis vel ipsa repellendus voluptates accusamus nobis et.</p>
+                      </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="progress" style="height: 5px;">
-            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
-              aria-valuemin="0" aria-valuemax="100" style="background-color: black;"></div>
-          </div>
-          <div class="row">
-            <div class="text-truncate" style="margin-top: 200px">
-              <span style="font-weight: bold">
-                <a href="" class="text-black me-2" style="text-decoration: none">
-                  0
-                  <i class="fa-solid fa-heart"></i>
-                </a>
-                0 Comments
-              </span>
-            </div>
-          </div>
-          <div class="progress" style="height: 1px;">
-            <div class="progress-bar" role="progressbar" style="width: 100%;" aria-valuenow="100"
-              aria-valuemin="0" aria-valuemax="100" style="background-color: #EEEEEE;"></div>
-          </div>
         </section>
 
         <!-- card -->
@@ -230,7 +185,7 @@
 
     <!-- Section: Links  -->
     <section class="">
-      <div class="container text-center text-md-start mt-5">
+      <div class="container text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->

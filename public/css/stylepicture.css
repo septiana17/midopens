@@ -268,12 +268,13 @@ sup {
 }
 
 a {
-    color: #ffc800;
+    color: #004044;
     text-decoration: underline;
+    font-size: 25px;
 }
 
 a:hover {
-    color: #cca000;
+    color: #00ADB5;
 }
 
 a:not([href]):not([class]),
@@ -12298,7 +12299,7 @@ p {
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #00ADB5;
 }
 
 #mainNav .navbar-toggler {
@@ -12355,7 +12356,7 @@ p {
     #mainNav.navbar-shrink {
         padding-top: 1rem;
         padding-bottom: 1rem;
-        background-color: #212529;
+        background-color: #00ADB5;
     }
 
     #mainNav.navbar-shrink .navbar-brand {
