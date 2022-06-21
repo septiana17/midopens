@@ -44,7 +44,7 @@
   </nav>
 
   <!-- Masthead-->
-  <header class="masthead">
+  <header class="masthead" style="height: 100vh;">
     <div class="container">
       <div class="masthead-subheading">MidoPENS !</div>
       <div class="masthead-heading text-uppercase">Selamat Datang</div>

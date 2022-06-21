@@ -36,6 +36,10 @@ Route::get('/internal_post', function () {
     return view('internal_post'); # diganti landing page
 });
 
+Route::get('/external_post', function () {
+    return view('external_post'); # diganti landing page
+});
+
 Route::get('/internal_event', function () {
     return view('internal_event'); # diganti landing page
 });

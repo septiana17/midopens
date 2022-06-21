@@ -108,10 +108,10 @@
 
         <!-- Sidebar Menu -->
         <nav class="mt-2">
-          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
-            data-accordion="false">
+        
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="true">
             <!-- Add icons to the links using the .nav-icon class
-     with font-awesome or any other icon font library -->
+            with font-awesome or any other icon font library -->
             <li class="nav-item">
               <a href="{{ route('admin.dashboard') }}" class="nav-link">
                 <i class="nav-icon fas fa-tachometer-alt"></i>
@@ -120,6 +120,7 @@
                 </p>
               </a>
             </li>
+            <div class="dropdown keep-open">
             <li class="nav-item">
               <a href="#" class="nav-link active">
                 <i class="nav-icon fas fa-copy"></i>
@@ -128,7 +129,7 @@
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
-              <ul class="nav nav-treeview">
+              <ul class="nav nav-treeview" aria-labelledby="dLabel" id="dLabel" role="menu">
                 <li class="nav-item">
                   <a href="{{ route('admin.public_general') }}" class="nav-link active">
                     <i class="far fa-circle nav-icon"></i>
@@ -149,6 +150,7 @@
                 </li>
               </ul>
             </li>
+            </div>
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon far fa-envelope"></i>
@@ -178,6 +180,7 @@
             </li>
 
           </ul>
+        
         </nav>
         <!-- /.sidebar-menu -->
       </div>
@@ -333,6 +336,20 @@
   <script src="{{ asset('js/adminlte.min.js') }}"></script>
   <!-- AdminLTE for demo purposes -->
   <script src="{{ asset('js/demo.js') }}"></script>
+
+  <script type="text/javascript">
+    $('.keep-open').on({
+        "shown.bs.dropdown": function() { $(this).attr('closable', false); },
+        "click":             function() { },
+        "hide.bs.dropdown":  function() { return $(this).attr('closable') == 'true'; }
+    });
+
+    $('.keep-open #dLabel').on({
+      "click": function() {
+        $(this).parent().attr('closable', true );
+      }
+    })
+</script>
 </body>
 
 </html>

@@ -2316,9 +2316,9 @@ progress {
 .form-control:focus {
     color: #212529;
     background-color: #fff;
-    border-color: #ffe480;
+    border-color: #00ADB5;
     outline: 0;
-    box-shadow: 0 0 0 0.25rem rgba(255, 200, 0, 0.25);
+    box-shadow: 0 0 0 0.25rem rgba(4, 87, 87, 0.25);
 }
 
 .form-control::-webkit-date-and-time-value {
@@ -3268,23 +3268,23 @@ fieldset:disabled .btn {
 }
 
 .btn-primary {
-    color: #393E46;
-    background-color: #ffffff;
+    color: #fff;
+    background-color: #054098;
     /* border-color: #ffc800; */
 }
 
 .btn-primary:hover {
     color: #fff;
-    background-color: #0199a1;
+    background-color: #053276;
     /* border-color: #cca000; */
 }
 
 .btn-check:focus+.btn-primary,
 .btn-primary:focus {
     color: #fff;
-    background-color: #d9aa00;
-    border-color: #cca000;
-    box-shadow: 0 0 0 0.25rem rgba(255, 208, 38, 0.5);
+    background-color: #054098;
+    border-color: #054098;
+    box-shadow: 0 0 0 0.25rem rgba(5, 57, 225, 0.5);
 }
 
 .btn-check:checked+.btn-primary,
@@ -3293,8 +3293,8 @@ fieldset:disabled .btn {
 .btn-primary.active,
 .show>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #cca000;
-    border-color: #bf9600;
+    background-color: #054098;
+    border-color: #054098;
 }
 
 .btn-check:checked+.btn-primary:focus,
@@ -3302,14 +3302,14 @@ fieldset:disabled .btn {
 .btn-primary:active:focus,
 .btn-primary.active:focus,
 .show>.btn-primary.dropdown-toggle:focus {
-    box-shadow: 0 0 0 0.25rem rgba(255, 208, 38, 0.5);
+    box-shadow: 0 0 0 0.25rem rgba(9, 48, 244, 0.5);
 }
 
 .btn-primary:disabled,
 .btn-primary.disabled {
     color: #fff;
-    background-color: #ffc800;
-    border-color: #ffc800;
+    background-color: #054098;
+    border-color: #054098;
 }
 
 .btn-secondary {
@@ -12298,7 +12298,7 @@ p {
 #mainNav {
     padding-top: 1rem;
     padding-bottom: 1rem;
-    background-color: #212529;
+    background-color: #00ADB5;
 }
 
 #mainNav .navbar-toggler {
@@ -12355,7 +12355,7 @@ p {
     #mainNav.navbar-shrink {
         padding-top: 1rem;
         padding-bottom: 1rem;
-        background-color: #212529;
+        background-color: #00ADB5;
     }
 
     #mainNav.navbar-shrink .navbar-brand {

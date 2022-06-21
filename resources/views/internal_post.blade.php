@@ -22,9 +22,10 @@
 
 <body id="page-top">
   <!-- Navigation-->
-  <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+  <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo putih.png') }}" alt="logo" /> MidoPENS
+      <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo putih.png') }}" alt="logo" />
+        MidoPENS
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,13 +51,13 @@
       </div>
       <div class="row gy-3 my-3">
         <form action="#" id="forminternalpost">
-          <div class="form-group col-md-5">
+          <div class="form-group col-md-12">
             <div class="form-group d-flex justify-content-between">
               <div>
-                <label>Select</label>
+                <label>Filter</label>
                 <select class="form-control" id="filter" name="filter">
                   <option value=""></option>
-                  <option value="informatika">Teknik Informatika</option>
+                  <option class="form-control active" value="informatika">Teknik Informatika</option>
                   <option value="elektro">Teknik Elektronika</option>
                   <option value="elin">Teknik Elektro Industri</option>
                   <option value="tekkom">Teknik Komputer</option>
@@ -67,7 +68,8 @@
                   <option value="game">Teknik GameTek</option>
                 </select>
               </div>
-              <div>
+
+              <div style="margin-left: -500px;">
                 <label>Date</label>
                 <div class="input-group date" id="reservationdate" data-target-input="nearest">
                   <input type="date" class="form-control datetimepicker-input"
@@ -77,6 +79,13 @@
                   </div>
                 </div>
               </div>
+
+              <div class="form-inline my-2 my-lg-0" style="margin-left: -100px">
+                <label>Search</label>
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+              </div>
+
             </div>
           </div>
           <div class="text-center">
@@ -87,90 +96,130 @@
 
         <!-- card -->
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow">
+          <div class="card box-shadow" style="border-radius: 10px;">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
+                Informatika</button>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow">
+          <div class="card box-shadow" style="border-radius: 10px;">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
+                Informatika</button>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow">
+          <div class="card box-shadow" style="border-radius: 10px;">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
+                Informatika</button>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow">
+          <div class="card box-shadow" style="border-radius: 10px;">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
+                Informatika</button>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow">
+          <div class="card box-shadow" style="border-radius: 10px;">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
+                Informatika</button>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow">
+          <div class="card box-shadow" style="border-radius: 10px;">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
+                Informatika</button>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow">
+          <div class="card box-shadow" style="border-radius: 10px;">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
+                Informatika</button>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow">
+          <div class="card box-shadow" style="border-radius: 10px;">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
+                Informatika</button>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
