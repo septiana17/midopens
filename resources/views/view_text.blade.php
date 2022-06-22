@@ -38,9 +38,9 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">Public Information</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Internal Event</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">External Event</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Informasi Publik</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Acara Internal</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Acara Eksternal</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Request</a></li>
         </ul>
       </div>
@@ -292,13 +292,13 @@
             <hr class="mb-4 mt-0 d-inline-block mx-auto"
               style="width: 60px; background-color: #7c4dff; height: 2px" />
             <p>
-              <a href="#!" class="text-dark">Public Information</a>
+              <a href="#!" class="text-dark">Informasi Publik</a>
             </p>
             <p>
-              <a href="#!" class="text-dark">Internal Event</a>
+              <a href="#!" class="text-dark">Acara Internal</a>
             </p>
             <p>
-              <a href="#!" class="text-dark">External Event</a>
+              <a href="#!" class="text-dark">Acara Eksternal</a>
             </p>
           </div>
           <!-- Grid column -->

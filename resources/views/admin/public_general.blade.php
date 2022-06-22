@@ -125,7 +125,7 @@
               <a href="#" class="nav-link active">
                 <i class="nav-icon fas fa-copy"></i>
                 <p>
-                  Content Management
+                  Manajemen Konten
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
@@ -133,19 +133,19 @@
                 <li class="nav-item">
                   <a href="{{ route('admin.public_general') }}" class="nav-link active">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Public Information</p>
+                    <p>Informasi Publik</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="{{ route('admin.internal_general') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Internal Event</p>
+                    <p>Acara Internal</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="{{ route('admin.external_general') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>External Event</p>
+                    <p>Acara Eksternal</p>
                   </a>
                 </li>
               </ul>
@@ -155,7 +155,7 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon far fa-envelope"></i>
                 <p>
-                  Requests
+                  Permintaan
                   <i class="fas fa-angle-left right"></i>
                   <span class="badge badge-info right">6</span>
                 </p>
@@ -164,19 +164,22 @@
                 <li class="nav-item">
                   <a href="{{ route('admin.post_request') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Post Requests</p>
+                    <p>Permintaan Konten</p>
                   </a>
                 </li>
               </ul>
             </li>
 
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-user"></i>
-                <p>
-                  Logout
-                </p>
-              </a>
+              <form action="{{route('logout')}}" method="POST">
+                @csrf
+                <button type="submit" class="nav-link">
+                  <i class="nav-icon fas fa-sign-out-alt"></i>
+                  <p>
+                    Keluar
+                  </p>
+                </button>
+              </form>
             </li>
 
           </ul>
@@ -194,12 +197,12 @@
         <div class="container-fluid">
           <div class="row mb-2">
             <div class="col-sm-6">
-              <h1>Public Information</h1>
+              <h1>Informasi Publik</h1>
             </div>
             <div class="col-sm-6">
               <ol class="breadcrumb float-sm-right">
                 <li class="breadcrumb-item"><a href="{{ route('admin.dashboard') }}">Home</a></li>
-                <li class="breadcrumb-item active">Public Information</li>
+                <li class="breadcrumb-item active">Informasi Publik</li>
               </ol>
             </div>
           </div>
@@ -235,19 +238,19 @@
                     No.
                   </th>
                   <th style="width: 20%">
-                    Title
+                    Judul
                   </th>
                   <th style="width: 30%">
-                    Description
+                    Deskripsi
                   </th>
                   <th>
-                    Category
+                    Kategori
                   </th>
                   <th style="width: 8%" class="text-center">
                     Status
                   </th>
                   <th style="width: 20%" class="text-center">
-                    Action
+                    Aksi
                   </th>
                 </tr>
               </thead>
@@ -273,14 +276,14 @@
                       {{ $content->category->name }}
                     </td>
                     <td class="project-state">
-                      <span class="badge badge-success">Success</span>
+                      <span class="badge badge-success">Sukses</span>
                     </td>
                     <div class="btn-group">
                     <td class="project-actions text-right">
                       <a class="btn btn-primary btn-sm" href="#">
                         <i class="fas fa-folder">
                         </i>
-                        View
+                        Lihat
                       </a>
                       <a class="btn btn-info btn-sm"
                         href="{{ route('admin.public_general.edit', $content->id) }}">
@@ -294,7 +297,7 @@
                           <button type="submit" onclick="return confirm('Are you sure?')" class="btn btn-danger btn-sm">
                             <i class="fas fa-trash">
                             </i>
-                            Delete
+                        Hapus
                           </button>
                       </form>
                     </td>

@@ -132,7 +132,7 @@
               <a href="#" class="nav-link active">
                 <i class="nav-icon fas fa-copy"></i>
                 <p>
-                  Content Management
+                  Manajemen Konten
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
@@ -140,19 +140,19 @@
                 <li class="nav-item">
                   <a href="{{ route('admin.public_general') }}" class="nav-link active">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Public Information</p>
+                    <p>Informasi Publik</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="{{ route('admin.internal_general') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Internal Event</p>
+                    <p>Acara Internal</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="{{ route('admin.external_general') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>External Event</p>
+                    <p>Acara Eksternal</p>
                   </a>
                 </li>
               </ul>
@@ -161,7 +161,7 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon far fa-envelope"></i>
                 <p>
-                  Requests
+                  Permintaan
                   <i class="fas fa-angle-left right"></i>
                   <span class="badge badge-info right">6</span>
                 </p>
@@ -170,19 +170,22 @@
                 <li class="nav-item">
                   <a href="{{ route('admin.post_request') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Post Requests</p>
+                    <p>Permintaan Konten</p>
                   </a>
                 </li>
               </ul>
             </li>
 
             <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-user"></i>
-                <p>
-                  Logout
-                </p>
-              </a>
+              <form action="{{route('logout')}}" method="POST">
+                @csrf
+                <button type="submit" class="nav-link">
+                  <i class="nav-icon fas fa-sign-out-alt"></i>
+                  <p>
+                    Keluar
+                  </p>
+                </button>
+              </form>
             </li>
 
           </ul>
@@ -224,33 +227,33 @@
             <div class="card card-outline card-info">
               <div class="card-header">
                 <h3 class="card-title">
-                  Create Content
+                  Buat Konten
                 </h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <div class="form-group">
-                  <label for="title">Title</label>
+                  <label for="title">Judul</label>
                   <input type="text" class="form-control" name="title" id="title"
                     value="{{$data->title}}">
                 </div>
 
                 <input type="hidden" name="page" value="public">
 
-                <label for="summernote">Description</label>
+                <label for="summernote">Deskripsi</label>
                 <textarea id="summernote" name="description">
                 {{$data->description}}
                 </textarea>
 
                 <div class="form-group">
-                  <label for="type">Choose Type</label>
+                  <label for="type">Pilih Jenis</label>
                   <select class="form-control" id="type" name="type" disabled>
                     <option value="{{$data->type}}">{{$data->type}}</option>
                   </select>
                 </div>
 
                 <div class="form-group">
-                  <label for="category">Category</label>
+                  <label for="category">Kategori</label>
                   <select id="category" name="category_id" class="form-control select2"
                     style="width: 100%">
                     @foreach ($categories as $category)
@@ -268,12 +271,12 @@
                   <button type="submit" class="btn btn-success btn-sm">
                     <i class="fas fa-folder">
                     </i>
-                    Save
+                    Simpan
                   </button>
                   <a class="btn btn-info btn-sm" href="#">
                     <i class="fas fa-pencil-alt">
                     </i>
-                    Preview
+                    Tinjau
                   </a>
                 </td>
               </tr>
@@ -286,20 +289,20 @@
             <div class="card card-outline card-success">
               <div class="card-header">
                 <h3 class="card-title">
-                  Add Category
+                  Tambah Kategori
                 </h3>
               </div>
               <!-- /.card-header -->
               <div class="card-body">
                 <form class="form-group" action="{{route('admin.category.create')}}" method="POST">
                   @csrf
-                  <label for="title">Add</label>
+                  <label for="title">Tambah</label>
                     <div class="form-outline input-group">
 
                           <input type="search" class="form-control rounded"
-                            placeholder="Add Category" aria-label="Add Category"
+                            placeholder="Tambah Kategori" aria-label="Tambah Kategori"
                             aria-describedby="search-addon" name="name" />
-                          <button type="submit" class="btn btn-outline-success" >Add</button>
+                          <button type="submit" class="btn btn-outline-success" >Tambah</button>
                           <input type="hidden" name="admin_id" value="{{Auth::id()}}">
                     </div>
                 </div>

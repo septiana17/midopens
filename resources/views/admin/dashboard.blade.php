@@ -43,7 +43,7 @@
               class="fas fa-bars"></i></a>
         </li>
         <li class="nav-item d-none d-sm-inline-block">
-          <a href="../../index3.html" class="nav-link">Home</a>
+          <a href="#" class="nav-link">Home</a>
         </li>
       </ul>
 
@@ -138,7 +138,7 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-copy"></i>
                 <p>
-                  Content Management
+                  Manajemen Konten
                   <i class="fas fa-angle-left right"></i>
                 </p>
               </a>
@@ -146,19 +146,19 @@
                 <li class="nav-item">
                   <a href="{{ route('admin.public_general') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Public Information</p>
+                    <p>Informasi Publik</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="{{ route('admin.internal_general') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Internal Event</p>
+                    <p>Acara Internal</p>
                   </a>
                 </li>
                 <li class="nav-item">
                   <a href="{{ route('admin.external_general') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>External Event</p>
+                    <p>Acara Eksternal</p>
                   </a>
                 </li>
               </ul>
@@ -167,7 +167,7 @@
               <a href="#" class="nav-link">
                 <i class="nav-icon far fa-envelope"></i>
                 <p>
-                  Requests
+                  Permintaan
                   <i class="fas fa-angle-left right"></i>
                   <span class="badge badge-info right">6</span>
                 </p>
@@ -176,7 +176,7 @@
                 <li class="nav-item">
                   <a href="{{ route('admin.post_request') }}" class="nav-link">
                     <i class="far fa-circle nav-icon"></i>
-                    <p>Post Requests</p>
+                    <p>Permintaan Konten</p>
                   </a>
                 </li>
               </ul>
@@ -188,7 +188,7 @@
                 <button type="submit" class="nav-link">
                   <i class="nav-icon fas fa-sign-out-alt"></i>
                   <p>
-                    Logout
+                    Keluar
                   </p>
                 </button>
               </form>
@@ -229,13 +229,13 @@
               <div class="small-box bg-info">
                 <div class="inner">
                   <h3>150</h3>
-                  <p>New Orders</p>
+                  <p>Total Mahasiswa Terdaftar</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-bag"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i
-                    class="fas fa-arrow-circle-right"></i></a>
+                {{-- <a href="#" class="small-box-footer">More info <i
+                    class="fas fa-arrow-circle-right"></i></a> --}}
               </div>
 
               <!-- small box -->
@@ -243,13 +243,13 @@
                 <div class="inner">
                   <h3>53</h3>
 
-                  <p>Bounce Rate</p>
+                  <p>Total Instansi Terdaftar</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-stats-bars"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i
-                    class="fas fa-arrow-circle-right"></i></a>
+                {{-- <a href="#" class="small-box-footer">More info <i
+                    class="fas fa-arrow-circle-right"></i></a> --}}
               </div>
             </section>
 
@@ -259,13 +259,13 @@
                 <div class="inner">
                   <h3>44</h3>
 
-                  <p>User Registrations</p>
+                  <p>Total Publikasi Konten</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-person-add"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i
-                    class="fas fa-arrow-circle-right"></i></a>
+                {{-- <a href="#" class="small-box-footer">More info <i
+                    class="fas fa-arrow-circle-right"></i></a> --}}
               </div>
 
               <!-- small box -->
@@ -273,13 +273,13 @@
                 <div class="inner">
                   <h3>65</h3>
 
-                  <p>Unique Visitors</p>
+                  <p>Konten Masukan</p>
                 </div>
                 <div class="icon">
                   <i class="ion ion-pie-graph"></i>
                 </div>
-                <a href="#" class="small-box-footer">More info <i
-                    class="fas fa-arrow-circle-right"></i></a>
+                {{-- <a href="#" class="small-box-footer">More info <i
+                    class="fas fa-arrow-circle-right"></i></a> --}}
               </div>
             </section>
           </div>

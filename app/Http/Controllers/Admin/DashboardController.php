@@ -17,7 +17,7 @@ class DashboardController extends Controller
     public function viewPublic()
     {
         $data = [
-            'title' => 'Public Information',
+            'title' => 'Informasi Publik',
             'contents' => Content::where('page', 'public')->get(),
         ];
         return view('admin.public_general', $data);

@@ -23,7 +23,7 @@
       <a href="#" class="h1">Admin <b>MidoPENS</b></a>
     </div>
     <div class="card-body">
-      <p class="login-box-msg">Sign in to start your session</p>
+      <p class="login-box-msg">Silahkan masuk ke MidoPENS</p>
 
       <form action="{{route('admin.login.post')}}" method="post">
         @csrf
@@ -54,7 +54,7 @@
           </div>
           <!-- /.col -->
           <div class="col-4">
-            <button type="submit" class="btn btn-primary btn-block">Sign In</button>
+            <button type="submit" class="btn btn-primary btn-block">Login</button>
           </div>
           <!-- /.col -->
         </div>
