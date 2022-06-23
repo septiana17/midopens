@@ -43,9 +43,12 @@ Route::group(['prefix' => '/admin'], function ()
 Route::get('/login', [AuthController::class, 'viewLogin'])->name('user.login');
 Route::post('/login', [LoginController::class, 'login'])->name('user.login.post');
 
+Route::get('/login-pengunjung', [AuthController::class, 'viewLogin'])->name('instansi.login');
+Route::post('/login-pengunjung', [LoginController::class, 'login'])->name('instansi.login.post');
+
 Route::get('/register', [AuthController::class, 'viewRegister'])->name('user.register');
 Route::post('/register', [RegisterController::class, 'register'])->name('user.register.post');
 
 # Tampilan Login Guest
-Route::get('/register-pengunjung', [AuthController::class, 'register_pengunjung'])->name('guest.register');
-Route::post('/register-pengunjung', [LoginController::class, 'store_pengunjung'])->name('guest.register.post');
+Route::get('/register-pengunjung', [AuthController::class, 'register_pengunjung'])->name('instansi.register');
+Route::post('/register-pengunjung', [LoginController::class, 'store_pengunjung'])->name('instansi.register.post');

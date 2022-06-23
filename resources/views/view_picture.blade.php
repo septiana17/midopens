@@ -36,7 +36,7 @@
           <li class="nav-item"><a class="nav-link active" href="#">Informasi Publik</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Acara Internal</a></li>
           <li class="nav-item"><a class="nav-link" href="#">Acara Eksternal</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Request</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('request')}}">Request</a></li>
         </ul>
       </div>
     </div>

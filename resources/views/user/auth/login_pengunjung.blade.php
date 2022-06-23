@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>LoginMahasiswa | User</title>
+  <title>LoginPengunjung | User</title>
 
   <!-- Bootstrap -->
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
@@ -24,9 +24,9 @@
               <header>Login ke MidoPENS</header>
               <div class="form-group">
                 <i class="fas fa-envelope"></i>
-                <input class="form-control" type="text" placeholder="Email" id="email" name="email" required>
+                <input class="form-control" type="text" placeholder="Email Instansi" id="email" name="email" required>
                 <div class="invalid-feedback">
-                  Masukkan email.
+                  Masukkan email instansi.
                 </div>
               </div>
               <div class="form-group">
@@ -42,7 +42,7 @@
                   <div class="invalid-feedback">Centang terlebih dahulu.</div>
                 </label>
                 <label>
-                  <small>Apakah belum memiliki akun? <a href="{{route('user.register')}}"> Register.</a></small>
+                  <small>Apakah belum memiliki akun? <a href="{{route('instansi.register')}}"> Register.</a></small>
                 </label>
               </div>
               <input type="submit" class="button" value="Login">

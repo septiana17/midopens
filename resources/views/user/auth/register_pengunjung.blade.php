@@ -25,28 +25,28 @@
               <p> Selamat Datang di MidoPENS ! </p>
               <div class="form-group">
                 <i class="fas fa-user"></i>
-                <input class="myInput" type="text" placeholder="FullName" id="fullname" required>
+                <input class="form-control" type="text" placeholder="Nama Lengkap" id="name" name="name" required>
                 {{-- <div class="invalid-feedback">
                    <small id="emailHelp" class="form-text text-muted">*Pastikan Nama Lengkapmu Suda Benar.</small>
                 </div> --}}
               </div>
               <div class="form-group">
                 <i class="fas fa-building"></i>
-                <input class="myInput" type="text" placeholder="Perusahaan" id="perusahaan" required>
+                <input class="form-control" type="text" placeholder="Perusahaan" id="perusahaan" name="company" required>
                 {{-- <div class="invalid-feedback">
                    <small id="emailHelp" class="form-text text-muted">*Pastikan Nama Lengkapmu Suda Benar.</small>
                 </div> --}}
               </div>
               <div class="form-group">
                 <i class="fas fa-envelope"></i>
-                <input class="myInput" type="text" placeholder="EmailKerja" id="email" required>
+                <input class="form-control" type="text" placeholder="Email Kerja" id="email" name="email" required>
                 <div class="invalid-feedback">
                   Please enter your email.
                 </div>
               </div>
               <div class="form-group">
                  <i class="fas fa-lock"></i>
-                <input class="myInput" type="password" placeholder="Password" id="password"
+                <input class="form-control" name="password" type="password" placeholder="Password" id="password"
                 required>
               </div>
               <div class="form-group">
@@ -54,7 +54,7 @@
                   <input type="checkbox" name="remember" id="remember" required>
                   <small>Saya setuju dengan Syarat & Ketentuan</small>
                   </input>
-                  <div class="invalid-feedback">You must chcek the box.</div>
+                  <div class="invalid-feedback">Centang terlebih dahulu.</div>
                 </label>
                 <br>
                 <label>

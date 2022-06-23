@@ -22,11 +22,11 @@ require __DIR__.'/auth.php';
 
 Route::get('/', function () {
     return view('index'); # diganti landing page
-});
+})->name('home');
 
 Route::get('/request', function () {
     return view('request'); # diganti landing page
-});
+})->name('request');
 
 Route::get('/public_post', function () {
     return view('public_post'); # diganti landing page
@@ -42,11 +42,11 @@ Route::get('/external_post', function () {
 
 Route::get('/internal_event', function () {
     return view('internal_event'); # diganti landing page
-});
+})->name('internal');
 
 Route::get('/external_event', function () {
     return view('external_event'); # diganti landing page
-});
+})->name('external');
 
 Route::get('/view_picture', function () {
     return view('view_picture'); # diganti landing page

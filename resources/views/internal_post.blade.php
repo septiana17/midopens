@@ -33,10 +33,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">Informasi Publik</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Acara Internal</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Acara Eksternal</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Request</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Informasi Publik</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('internal')}}">Acara Internal</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('external')}}">Acara Eksternal</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('request')}}">Request</a></li>
         </ul>
       </div>
     </div>

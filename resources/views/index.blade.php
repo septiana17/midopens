@@ -34,10 +34,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">Informasi Publik</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Acara Internal</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Acara Eksternal</a></li>
-          <li class="nav-item"><a class="btn btn-info btn-md" href="{{route('user.login')}}">Login</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Informasi Publik</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('internal')}}">Acara Internal</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('external')}}">Acara Eksternal</a></li>
+          <li class="nav-item"><a class="btn btn-info btn-md" href="#" data-toggle="modal" data-target="#exampleModal">Login</a></li>
         </ul>
       </div>
     </div>
@@ -69,7 +69,10 @@
               <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
               <div class="card-body text-left">
                 <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik Informatika</button>
-                 <div class="row">
+                <div class="row">
+                    <p>Kategori</p>
+                </div>
+                <div class="row">
                     <p>9 Mei 2022</p>
                 </div>
                 <div class="row">
@@ -84,7 +87,10 @@
               <img class="card-img-top" src="{{ asset('/img/photo2.png') }}" alt="Card image cap">
               <div class="card-body text-left">
                 <button type="button" class="btn btn-warning" style="padding-top: -30px;">Teknik Elektronika</button>
-                 <div class="row">
+                <div class="row">
+                    <p>Kategori</p>
+                </div>
+                <div class="row">
                     <p>9 Mei 2022</p>
                 </div>
                 <div class="row">
@@ -99,7 +105,10 @@
               <img class="card-img-top" src="{{ asset('/img/photo3.jpg') }}" alt="Card image cap">
               <div class="card-body text-left">
                 <button type="button" class="btn btn-danger" style="padding-top: -30px;">Teknik Elektro Industri</button>
-                 <div class="row">
+                <div class="row">
+                    <p>Kategori</p>
+                </div>
+                <div class="row">
                     <p>9 Mei 2022</p>
                 </div>
                 <div class="row">
@@ -114,7 +123,10 @@
               <img class="card-img-top" src="{{ asset('/img/photo4.jpg') }}" alt="Card image cap">
               <div class="card-body text-left">
                 <button type="button" class="btn btn-info" style="padding-top: -30px;">Teknik Komputer</button>
-                 <div class="row">
+                <div class="row">
+                    <p>Kategori</p>
+                </div>
+                <div class="row">
                     <p>9 Mei 2022</p>
                 </div>
                 <div class="row">
@@ -128,7 +140,7 @@
 
         <div class="row">
           <div class="col-lg-8 mx-auto text-center" style="padding-top: 50px;">
-            <p class="large text-muted"><a href="#"> See All The Post <i class="fas fa-arrow-right"></i> </a></p>
+            <p class="large text-muted"><a href="#"> Lihat Semua Postingan <i class="fas fa-arrow-right"></i> </a></p>
           </div>
         </div>
 
@@ -187,6 +199,24 @@
       </div>
     </div>
   </section>
+
+   <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Register</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body d-flex justify-content-between">
+          <button type="button" class="btn btn-outline-primary" onclick="location.href='{{route('user.login')}}'">Mahasiswa PENS</button>
+          <button type="button" class="btn btn-outline-primary" onclick="location.href='{{route('instansi.login')}}'">Pengunjung</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
   <!-- Footer -->
   <footer class="text-center text-lg-start text-dark" style="background-color: #ECEFF1">

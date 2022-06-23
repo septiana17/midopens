@@ -26,7 +26,8 @@
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo putih.png') }}" alt="logo" /> MidoPENS
+      <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo putih.png') }}" alt="logo" />
+        MidoPENS
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +35,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link" href="#">Informasi Publik</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Acara Internal</a></li>
-          <li class="nav-item"><a class="nav-link active" href="#">Acara Eksternal</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Request</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Informasi Publik</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('internal') }}">Acara Internal</a>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="{{ route('external') }}">Acara Eksternal</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{route('request')}}">Request</a></li>
         </ul>
       </div>
     </div>
@@ -50,16 +52,17 @@
 
         <!-- Left -->
         <section class="col-lg-6">
-          <div class="row justify-content-center">
-            <img src="{{ asset('/img/logo putih.png') }}" alt="logo" style="height: 400px; width: 400px;"/>
-          </div>
+          <div class="masthead-subheading">Selamat Datang di MidoPENS !</div>
+          <div class="masthead-heading text-uppercase">Acara Eksternal </div>
+          <div class="masthead-subheading">Politeknik Elektronika Negeri Surabaya (PENS)</div>
         </section>
 
         <!-- Right -->
         <section class="col-lg-6">
-          <div class="masthead-subheading">Selamat Datang di MidoPENS !</div>
-            <div class="masthead-heading text-uppercase">Acara Eksternal </div>
-          <div class="masthead-subheading">Politeknik Elektronika Negeri Surabaya (PENS)</div>
+          <div class="row justify-content-center">
+            <img src="{{ asset('/img/logo putih.png') }}" alt="logo"
+              style="height: 400px; width: 400px;" />
+          </div>
         </section>
 
       </div>
@@ -68,194 +71,206 @@
 
   <!-- Slides card-->
   <section class="page-section">
-    <div class="header-hero">
-      <div class="container">
-        <div class="row">
-          <div class="text-center">
-            <h2 class="section-heading text-uppercase">Post Terupdate</h2>
-            <h3 class="section-subheading text-muted">Berita dari setiap jurusan yang ada di PENS hadir di MidoPENS .</h3>
-          </div>
-          <div class="swiper mySwiper">
-            <div class="swiper-wrapper" style="margin-right: 90px;">
-              <div class="swiper-slide">
-                <div class="col-lg-3 col-sm-3">
-                  <div class="card" style="width: 18rem; border-radius: 10px;">
-                    <img class="card-img-top" src="{{ asset('/img/photo3.jpg') }}"
-                      alt="Card image cap">
-                    <div class="card-body text-left">
-                      <button type="button" class="btn btn-info"
-                        style="padding-top: -30px;">Teknik Komputer</button>
-                      <div class="row">
-                        <p>9 Mei 2022</p>
-                      </div>
-                      <div class="row">
-                        <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
-                          pasti <i class="fas fa-arrow-right"></i></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+  <div class="header-hero">
+  <div class="container">
+    <div class="row">
+      <div class="text-center">
+        <h2 class="section-heading text-uppercase">Post Terupdate</h2>
+        <h3 class="section-subheading text-muted">Berita dan informasi terkni dari setiap jurusan yang ada di PENS hadir di MidoPENS .</h3>
+      </div>
+    <div id="carouselExampleControls" class="carousel" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <div class="card">
+            <div class="img-wrapper"><img src="{{ asset('/img/photo3.jpg') }}" class="d-block w-100" alt="Card image cap"> </div>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-info"
+                style="padding-top: -30px;">Teknik Komputer</button>
+              <div class="row">
+                <p>Kategori</p>
               </div>
-              <div class="swiper-slide">
-                <div class="col-lg-3 col-sm-3">
-                  <div class="card" style="width: 18rem; border-radius: 10px;">
-                    <img class="card-img-top" src="{{ asset('/img/photo1.png') }}"
-                      alt="Card image cap">
-                    <div class="card-body text-left">
-                      <button type="button" class="btn btn-info"
-                        style="padding-top: -30px;">Teknik Komputer</button>
-                      <div class="row">
-                        <p>9 Mei 2022</p>
-                      </div>
-                      <div class="row">
-                        <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
-                          pasti <i class="fas fa-arrow-right"></i></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
               </div>
-              <div class="swiper-slide">
-                <div class="col-lg-3 col-sm-3">
-                  <div class="swiper-slide card" style="width: 18rem; border-radius: 10px;">
-                    <img class="card-img-top" src="{{ asset('/img/photo2.png') }}"
-                      alt="Card image cap">
-                    <div class="card-body text-left">
-                      <button type="button" class="btn btn-info"
-                        style="padding-top: -30px;">Teknik Komputer</button>
-                      <div class="row">
-                        <p>9 Mei 2022</p>
-                      </div>
-                      <div class="row">
-                        <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
-                          pasti <i class="fas fa-arrow-right"></i></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="col-lg-3 col-sm-3">
-                  <div class="card" style="width: 18rem; border-radius: 10px;">
-                    <img class="card-img-top" src="{{ asset('/img/photo4.jpg') }}"
-                      alt="Card image cap">
-                    <div class="card-body text-left">
-                      <button type="button" class="btn btn-info"
-                        style="padding-top: -30px;">Teknik Komputer</button>
-                      <div class="row">
-                        <p>9 Mei 2022</p>
-                      </div>
-                      <div class="row">
-                        <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
-                          pasti <i class="fas fa-arrow-right"></i></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="col-lg-3 col-sm-3">
-                  <div class="card" style="width: 18rem; border-radius: 10px;">
-                    <img class="card-img-top" src="{{ asset('/img/photo1.png') }}"
-                      alt="Card image cap">
-                    <div class="card-body text-left">
-                      <button type="button" class="btn btn-info"
-                        style="padding-top: -30px;">Teknik Komputer</button>
-                      <div class="row">
-                        <p>9 Mei 2022</p>
-                      </div>
-                      <div class="row">
-                        <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
-                          pasti <i class="fas fa-arrow-right"></i></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="col-lg-3 col-sm-3">
-                  <div class="card" style="width: 18rem; border-radius: 10px;">
-                    <img class="card-img-top" src="{{ asset('/img/photo4.jpg') }}"
-                      alt="Card image cap">
-                    <div class="card-body text-left">
-                      <button type="button" class="btn btn-info"
-                        style="padding-top: -30px;">Teknik Komputer</button>
-                      <div class="row">
-                        <p>9 Mei 2022</p>
-                      </div>
-                      <div class="row">
-                        <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
-                          pasti <i class="fas fa-arrow-right"></i></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="col-lg-3 col-sm-3">
-                  <div class="card" style="width: 18rem; border-radius: 10px;">
-                    <img class="card-img-top" src="{{ asset('/img/photo3.jpg') }}"
-                      alt="Card image cap">
-                    <div class="card-body text-left">
-                      <button type="button" class="btn btn-info"
-                        style="padding-top: -30px;">Teknik Komputer</button>
-                      <div class="row">
-                        <p>9 Mei 2022</p>
-                      </div>
-                      <div class="row">
-                        <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
-                          pasti <i class="fas fa-arrow-right"></i></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="col-lg-3 col-sm-3">
-                  <div class="card" style="width: 18rem; border-radius: 10px;">
-                    <img class="card-img-top" src="{{ asset('/img/photo3.jpg') }}"
-                      alt="Card image cap">
-                    <div class="card-body text-left">
-                      <button type="button" class="btn btn-info"
-                        style="padding-top: -30px;">Teknik Komputer</button>
-                      <div class="row">
-                        <p>9 Mei 2022</p>
-                      </div>
-                      <div class="row">
-                        <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
-                          pasti <i class="fas fa-arrow-right"></i></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="col-lg-3 col-sm-3">
-                  <div class="card" style="width: 18rem; border-radius: 10px;">
-                    <img class="card-img-top" src="{{ asset('/img/photo3.jpg') }}"
-                      alt="Card image cap">
-                    <div class="card-body text-left">
-                      <button type="button" class="btn btn-info"
-                        style="padding-top: -30px;">Teknik Komputer</button>
-                      <div class="row">
-                        <p>9 Mei 2022</p>
-                      </div>
-                      <div class="row">
-                        <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
-                          pasti <i class="fas fa-arrow-right"></i></p>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
               </div>
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            {{-- <div class="swiper-pagination"></div> --}}
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"><img src="{{ asset('/img/photo3.jpg') }}" class="d-block w-100" alt="Card image cap"> </div>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-danger" style="padding-top: -30px;">Teknik Elektro Industri</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"><img src="{{ asset('/img/photo3.jpg') }}" class="d-block w-100" alt="Card image cap"> </div>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-secondary"
+                style="padding-top: -30px;">Sistem Pembangkit Energi</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"><img src="{{ asset('/img/photo3.jpg') }}" class="d-block w-100" alt="Card image cap"> </div>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-purple"
+                style="padding-top: -30px;">Multimedia Broadcasting</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"><img src="{{ asset('/img/photo3.jpg') }}" class="d-block w-100" alt="Card image cap"> </div>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-orange"
+                style="padding-top: -30px;">Teknik Mekatronika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"><img src="{{ asset('/img/photo3.jpg') }}" class="d-block w-100" alt="Card image cap"> </div>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-green"
+                style="padding-top: -30px;">Teknik Telekomunikasi</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"><img src="{{ asset('/img/photo3.jpg') }}" class="d-block w-100" alt="Card image cap"> </div>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary"
+                style="padding-top: -30px;">Teknik Informatika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"><img src="{{ asset('/img/photo3.jpg') }}" class="d-block w-100" alt="Card image cap"> </div>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-warning" style="padding-top: -30px;">Teknik Elektronika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <div class="card">
+            <div class="img-wrapper"><img src="{{ asset('/img/photo3.jpg') }}" class="d-block w-100" alt="Card image cap"> </div>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-info"
+                style="padding-top: -30px;">Teknik Komputer</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+
+      <div class="row">
+          <div class="col-lg-8 mx-auto text-center" style="padding-top: 50px;">
+            <p class="large text"><a href="#"> Lihat Semua Postingan <i class="fas fa-arrow-right"></i> </a></p>
+          </div>
+        </div>
+
     </div>
+    </div>
+  </div>
+  </div>
   </section>
 
   <!-- Jurusan-->
@@ -270,7 +285,7 @@
         <!-- card -->
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-it.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Informatika</h6>
@@ -279,7 +294,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-tekkom.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Komputer</h6>
@@ -288,7 +303,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-elka.jpg') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Elektronika</h6>
@@ -297,7 +312,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-elin.jpg') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Elektro Industri</h6>
@@ -306,7 +321,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-telkom.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Telekomunikasi</h6>
@@ -315,7 +330,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-meka.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Teknik Mekatronika</h6>
@@ -324,7 +339,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-mmb.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Multimedia Broadcasting</h6>
@@ -333,7 +348,7 @@
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
-            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px"
+            <img class="card-img-bottom m-auto" style="width: 200px; height: 200px; padding-top: 5px;"
               src="{{ asset('/img/logo/logo-spe.png') }}" alt="Card image cap">
             <div class="card-body">
               <h6 class="card-title text-center">Sistem Pembangkit Energi</h6>
@@ -358,22 +373,22 @@
 
       <!-- Right -->
       <div>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-google"></i>
         </a>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-github"></i>
         </a>
       </div>
@@ -473,6 +488,10 @@
   <!-- Swiper JS -->
   <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
+
+
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
@@ -490,6 +509,42 @@
         prevEl: ".swiper-button-prev",
       },
     });
+  </script>
+
+  <script>
+    var multipleCardCarousel = document.querySelector(
+      "#carouselExampleControls"
+    );
+    if (window.matchMedia("(min-width: 768px)").matches) {
+      var carousel = new bootstrap.Carousel(multipleCardCarousel, {
+        interval: false,
+      });
+      var carouselWidth = $(".carousel-inner")[0].scrollWidth;
+      var cardWidth = $(".carousel-item").width();
+      var scrollPosition = 0;
+      $("#carouselExampleControls .carousel-control-next").on("click", function() {
+        if (scrollPosition < carouselWidth - cardWidth * 4) {
+          scrollPosition += cardWidth;
+          $("#carouselExampleControls .carousel-inner").animate({
+              scrollLeft: scrollPosition
+            },
+            600
+          );
+        }
+      });
+      $("#carouselExampleControls .carousel-control-prev").on("click", function() {
+        if (scrollPosition > 0) {
+          scrollPosition -= cardWidth;
+          $("#carouselExampleControls .carousel-inner").animate({
+              scrollLeft: scrollPosition
+            },
+            600
+          );
+        }
+      });
+    } else {
+      $(multipleCardCarousel).addClass("slide");
+    }
   </script>
 </body>
 

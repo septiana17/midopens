@@ -26,28 +26,28 @@
               <p> Selamat Datang di MidoPENS ! </p>
               <div class="form-group">
                 <i class="fas fa-user"></i>
-                <input class="myInput" name="name" type="text" placeholder="FullName" id="fullname" required>
+                <input class="form-control" name="name" type="text" placeholder="FullName" id="fullname" required>
                 {{-- <div class="invalid-feedback">
                    <small id="emailHelp" class="form-text text-muted">*Pastikan Nama Lengkapmu Suda Benar.</small>
                 </div> --}}
               </div>
               <div class="form-group">
                 <i class="fas fa-id-card"></i>
-                <input class="myInput" name="nrp" type="number" placeholder="NRP" id="nrp" required>
+                <input class="form-control" name="nrp" type="number" placeholder="NRP" id="nrp" required>
                 {{-- <div class="invalid-feedback">
                    <small id="emailHelp" class="form-text text-muted">*Pastikan Nama Lengkapmu Suda Benar.</small>
                 </div> --}}
               </div>
               <div class="form-group">
                 <i class="fas fa-graduation-cap"></i>
-                <input class="myInput" name="jurusan" type="text" placeholder="Jurusan" id="jurusan" required>
+                <input class="form-control" name="jurusan" type="text" placeholder="Jurusan" id="jurusan" required>
                 {{-- <div class="invalid-feedback">
                    <small id="emailHelp" class="form-text text-muted">*Pastikan Nama Lengkapmu Suda Benar.</small>
                 </div> --}}
               </div>
               <div class="form-group">
                 <i class="fas fa-envelope"></i>
-                <input class="myInput" name="email" type="text" placeholder="EmailStudentPENS" id="email" required>
+                <input class="form-control" name="email" type="text" placeholder="EmailStudentPENS" id="email" required>
                 <div class="invalid-feedback">
                   Please enter your email.
                 </div>
@@ -62,7 +62,7 @@
                   <input type="checkbox" name="remember" id="remember" required>
                   <small>Saya setuju dengan Syarat & Ketentuan</small>
                   </input>
-                  <div class="invalid-feedback">You must chcek the box.</div>
+                  <div class="invalid-feedback">Centang terlebih dahulu.</div>
                 </label>
                 <br>
                 <label>
