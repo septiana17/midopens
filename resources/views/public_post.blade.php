@@ -17,7 +17,7 @@
   <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/stylepost.css" rel="stylesheet" />
-    <!-- Font Awesome -->
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="css/all.min.css">
 
 </head>
@@ -26,7 +26,8 @@
   <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo putih.png') }}" alt="logo" /> MidoPENS
+      <a class="navbar-brand" href="#"><img src="{{ asset('/img/logo putih.png') }}" alt="logo" />
+        MidoPENS
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarResponsive"
         aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -34,10 +35,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#">Informasi Publik</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Acara Internal</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Acara Eksternal</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{route('request')}}">Request</a></li>
+          <li class="nav-item"><a class="nav-link active" href="{{ route('home') }}">Informasi Publik</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('internal') }}">Acara Internal</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('external') }}">Acara Eksternal</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('request') }}">Request</a></li>
         </ul>
       </div>
     </div>
@@ -45,130 +46,222 @@
 
   {{-- tittle card --}}
   <section class="content">
-  <div class="container">
-    <div class="row gy-3 my-3">
-      <form action="#" id="formpublicpost">
-      <div class="form-group col-md-3">
-          <select class="form-control custom-select rounded-0" id="SelectRounded">
-            <option value="select">Select</option>
-            <option value="latest">Latest</option>
-            <option value="oldest">Oldest</option>
-          </select>
-      </div>
-      </form>
+    <div class="container">
+      <div class="row gy-3 my-3">
+        <form action="#" id="formpublicpost">
+          <div class="form-group col-md-12">
+            <div class="form-group d-flex justify-content-between">
+              <div>
+                <label>Filter</label>
+                <select class="form-control" id="filter" name="filter">
+                  <option value=""></option>
+                  <option value="Terbaru">Terbaru</option>
+                  <option value="Terakhir">Terakhir</option>
+                </select>
+              </div>
 
-      <!-- card -->
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card box-shadow">
-          <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the
-              bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card box-shadow">
-          <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the
-              bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card box-shadow">
-          <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the
-              bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card box-shadow">
-          <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the
-              bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card box-shadow">
-          <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the
-              bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card box-shadow">
-          <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the
-              bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card box-shadow">
-          <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the
-              bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
-            <div class="col-sm-6 col-md-4 col-lg-3">
-        <div class="card box-shadow">
-          <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the
-              bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Go somewhere</a>
-          </div>
-        </div>
-      </div>
+              <div>
+                <label>Tanggal</label>
+                <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                  <input type="date" class="form-control datetimepicker-input"
+                    data-target="#reservationdate" name="filterdate" />
+                  <div class="input-group-append" data-target="#reservationdate"
+                    data-toggle="datetimepicker">
+                  </div>
+                </div>
+              </div>
 
+              <div class="form-inline my-2 my-lg-0">
+                <label class="form-inline">Search</label>
+                <div class="d-flex">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+          <div class="text-center">
+            <h2 class="section-heading text-uppercase"></h2>
+            <h3 class="section-subheading text-muted"></h3>
+          </div>
+        </form>
+
+        <!-- card -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card box-shadow">
+            <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-info"
+                style="padding-top: -30px;">Teknik Komputer</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card box-shadow">
+            <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-warning" style="padding-top: -30px;">Teknik Elektronika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card box-shadow">
+            <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary"
+                style="padding-top: -30px;">Teknik Informatika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card box-shadow">
+            <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-green"
+                style="padding-top: -30px;">Teknik Telekomunikasi</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card box-shadow">
+            <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-orange"
+                style="padding-top: -30px;">Teknik Mekatronika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card box-shadow">
+            <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-secondary"
+                style="padding-top: -30px;">Sistem Pembangkit Energi</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card box-shadow">
+            <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-purple"
+                style="padding-top: -30px;">Multimedia Broadcasting</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card box-shadow">
+            <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-secondary"
+                style="padding-top: -30px;">Sistem Pembangkit Energi</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+                <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
     </div>
-  </div>
 
-  <nav aria-label="Page navigation">
-  <ul class="pagination justify-content-center">
-    <li class="page-item text-primary">
-      <a class="page-link" href="#" aria-label="Previous">
-        <span aria-hidden="true">&laquo;</span>
-        <span class="sr-only">Previous</span>
-      </a>
-    </li>
-    <li class="page-item"><a class="page-link" href="#">1</a></li>
-    <li class="page-item"><a class="page-link" href="#">2</a></li>
-    <li class="page-item"><a class="page-link" href="#">3</a></li>
-    <li class="page-item">
-      <a class="page-link" href="#" aria-label="Next">
-        <span aria-hidden="true">&raquo;</span>
-        <span class="sr-only">Next</span>
-      </a>
-    </li>
-  </ul>
-</nav>
+    <nav aria-label="Page navigation">
+      <ul class="pagination justify-content-center">
+        <li class="page-item text-primary">
+          <a class="page-link" href="#" aria-label="Previous">
+            <span aria-hidden="true">&laquo;</span>
+            <span class="sr-only">Previous</span>
+          </a>
+        </li>
+        <li class="page-item"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item">
+          <a class="page-link" href="#" aria-label="Next">
+            <span aria-hidden="true">&raquo;</span>
+            <span class="sr-only">Next</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
   </section>
 
 

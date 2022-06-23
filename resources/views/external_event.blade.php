@@ -263,7 +263,7 @@
 
       <div class="row">
           <div class="col-lg-8 mx-auto text-center" style="padding-top: 50px;">
-            <p class="large text"><a href="#"> Lihat Semua Postingan <i class="fas fa-arrow-right"></i> </a></p>
+            <p class="large text"><a href="{{route('external_posted')}}"> Lihat Semua Postingan <i class="fas fa-arrow-right"></i> </a></p>
           </div>
         </div>
 

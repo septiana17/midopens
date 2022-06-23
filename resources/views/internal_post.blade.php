@@ -33,10 +33,11 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Informasi Publik</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{route('internal')}}">Acara Internal</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{route('external')}}">Acara Eksternal</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{route('request')}}">Request</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Informasi Publik</a></li>
+          <li class="nav-item"><a class="nav-link active" href="{{ route('internal') }}">Acara Internal</a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('external') }}">Acara Eksternal</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('request') }}">Request</a></li>
         </ul>
       </div>
     </div>
@@ -47,7 +48,7 @@
     <div class="container">
       <div class="text-center">
         <h2 class="section-heading text-uppercase"> Politeknik Elektronika Negeri Surabaya </h2>
-        <h3 class="section-subheading text-muted"> Teknik Informatika </h3>
+        <h3 class="section-subheading text-muted"> Jurusan </h3>
       </div>
       <div class="row gy-3 my-3">
         <form action="#" id="forminternalpost">
@@ -80,10 +81,12 @@
                 </div>
               </div>
 
-              <div class="form-inline my-2 my-lg-0" style="margin-left: -100px">
-                <label>Search</label>
-                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+              <div class="form-inline my-2 my-lg-0">
+                <label class="form-inline">Search</label>
+                <div class="d-flex">
+                  <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </div>
               </div>
 
             </div>
@@ -96,129 +99,153 @@
 
         <!-- card -->
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow" style="border-radius: 10px;">
+          <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
             <div class="card-body text-left">
-              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
-                Informatika</button>
+              <button type="button" class="btn btn-info" style="padding-top: -30px;">Teknik
+                Komputer</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
               <div class="row">
                 <p>9 Mei 2022</p>
               </div>
               <div class="row">
-                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
-                    class="fas fa-arrow-right"></i></p>
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow" style="border-radius: 10px;">
+          <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
             <div class="card-body text-left">
-              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
-                Informatika</button>
+              <button type="button" class="btn btn-warning" style="padding-top: -30px;">Teknik
+                Elektronika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
               <div class="row">
                 <p>9 Mei 2022</p>
               </div>
               <div class="row">
-                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
-                    class="fas fa-arrow-right"></i></p>
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow" style="border-radius: 10px;">
+          <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
             <div class="card-body text-left">
               <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
                 Informatika</button>
               <div class="row">
+                <p>Kategori</p>
+              </div>
+              <div class="row">
                 <p>9 Mei 2022</p>
               </div>
               <div class="row">
-                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
-                    class="fas fa-arrow-right"></i></p>
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow" style="border-radius: 10px;">
+          <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
             <div class="card-body text-left">
-              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
-                Informatika</button>
+              <button type="button" class="btn btn-green" style="padding-top: -30px;">Teknik
+                Telekomunikasi</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
               <div class="row">
                 <p>9 Mei 2022</p>
               </div>
               <div class="row">
-                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
-                    class="fas fa-arrow-right"></i></p>
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow" style="border-radius: 10px;">
+          <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
             <div class="card-body text-left">
-              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
-                Informatika</button>
+              <button type="button" class="btn btn-orange" style="padding-top: -30px;">Teknik
+                Mekatronika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
               <div class="row">
                 <p>9 Mei 2022</p>
               </div>
               <div class="row">
-                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
-                    class="fas fa-arrow-right"></i></p>
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow" style="border-radius: 10px;">
+          <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
             <div class="card-body text-left">
-              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
-                Informatika</button>
+              <button type="button" class="btn btn-secondary" style="padding-top: -30px;">Sistem
+                Pembangkit Energi</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
               <div class="row">
                 <p>9 Mei 2022</p>
               </div>
               <div class="row">
-                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
-                    class="fas fa-arrow-right"></i></p>
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow" style="border-radius: 10px;">
+          <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
             <div class="card-body text-left">
-              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
-                Informatika</button>
+              <button type="button" class="btn btn-purple" style="padding-top: -30px;">Multimedia
+                Broadcasting</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
               <div class="row">
                 <p>9 Mei 2022</p>
               </div>
               <div class="row">
-                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
-                    class="fas fa-arrow-right"></i></p>
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
               </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
-          <div class="card box-shadow" style="border-radius: 10px;">
+          <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
             <div class="card-body text-left">
-              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
-                Informatika</button>
+              <button type="button" class="btn btn-secondary" style="padding-top: -30px;">Sistem
+                Pembangkit Energi</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
               <div class="row">
                 <p>9 Mei 2022</p>
               </div>
               <div class="row">
-                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
-                    class="fas fa-arrow-right"></i></p>
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum
+                  pasti <i class="fas fa-arrow-right"></i></p>
               </div>
             </div>
           </div>

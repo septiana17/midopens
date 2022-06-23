@@ -30,15 +30,15 @@ Route::get('/request', function () {
 
 Route::get('/public_post', function () {
     return view('public_post'); # diganti landing page
-});
+})->name('public_posted');
 
 Route::get('/internal_post', function () {
     return view('internal_post'); # diganti landing page
-});
+})->name('internal_posted');
 
 Route::get('/external_post', function () {
     return view('external_post'); # diganti landing page
-});
+})->name('external_posted');
 
 Route::get('/internal_event', function () {
     return view('internal_event'); # diganti landing page
