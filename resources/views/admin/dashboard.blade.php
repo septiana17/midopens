@@ -282,6 +282,29 @@
                     class="fas fa-arrow-circle-right"></i></a> --}}
               </div>
             </section>
+
+            <section class="col-lg-12 connected">
+              <table class="table table-bordered" style="background-color: #ffffff;">
+                <thead>
+                  <tr class="text-center">
+                    <th scope="col" style="width: 1%">No.</th>
+                    <th scope="col" style="width: 35%">Judul Konten</th>
+                    <th scope="col" style="width: 30%">Pengirim Konten</th>
+                    <th scope="col" style="width: 19%">Kategori Konten</th>
+                    <th scope="col" style="width: 15%">Jumlah Suka Konten</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row">1</th>
+                    <td>Judul</td>
+                    <td>Anissa</td>
+                    <td>Poem</td>
+                    <td>2000</td>
+                  </tr>
+                </tbody>
+              </table>
+            </section>
           </div>
         </div>
       </section>

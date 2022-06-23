@@ -54,7 +54,7 @@
           <!-- Horizontal Form -->
           <div class="card card-info">
             <div class="card-header"  style="background-color: #00ADB5">
-              <h3 class="card-title">Form Request</h3>
+              <h3 class="card-title">Tabel Pengiriman</h3>
             </div>
             <!-- /.card-header -->
             <!-- form start -->
@@ -65,17 +65,17 @@
                   <label for="inputnumber3" class="col-sm-2 col-form-label">WhatsApp</label>
                   <div class="col-sm-10">
                     <input type="number" class="form-control" id="Number" placeholder="Number">
-                     <small id="emailHelp" class="form-text text-muted">*We'll never share your number with anyone else.</small>
+                     <small id="emailHelp" class="form-text text-muted">*Kami tidak akan menyebarkan nomor anda.</small>
                   </div>
                 </div>
 
                 <div class="form-group row">
                 <div class="input-group">
-                  <label for="inputfile3" class="col-sm-2 col-form-label">File Input</label>
+                  <label for="inputfile3" class="col-sm-2 col-form-label">Masukkan File</label>
                   
                   <div class="col-sm-8">
                     <input type="file" class="custom-file-input" id="exampleInputFile">
-                    <label class="custom-file-label" for="exampleInputFile">Choose file</label>
+                    <label class="custom-file-label" for="exampleInputFile">Pilih File</label>
                   </div>
                   <div class="input-group-append">
                     <span class="input-group-text">Upload</span>
@@ -102,7 +102,7 @@
           <!-- card -->
           <div class="card">
             <div class="card-header">
-              <h3 class="card-title">Table Request</h3>
+              <h3 class="card-title">Tabel Status</h3>
             </div>
             <!-- /.card-header -->
             <div class="card-body p-0">
@@ -113,7 +113,7 @@
                       No.
                     </th>
                     <th style="width: 20%">
-                      Name
+                      Nama
                     </th>
                     <th style="width: 20%">
                       File
@@ -135,7 +135,7 @@
                       <i class="fas fa-download"></i>
                     </td>
                     <td class="project-state">
-                      <span class="btn btn-success">Sukses</span>
+                      <span class="btn btn-success" style="cursor: default;">Sukses</span>
                     </td>
                   </tr>
                 </tbody>
