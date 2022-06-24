@@ -240,58 +240,47 @@
               </div>
               <div class="table-responsive mailbox-messages">
                 <table class="table table-hover table-striped">
-                  <thead>
+                  <thead class="text-center">
                     <tr>
-                      <th style="width: 1%">
+                      <th>
                         No.
                       </th>
-                      <th style="width: 20%">
+                      <th>
                         Nama
                       </th>
-                      <th style="width: 20%">
+                      <th>
+                        Nomor WhatsApp
+                      </th>
+                      <th>
                         Nama File
                       </th>
-                      <th style="width: 10%">
+                      <th>
                         Waktu
                       </th>
-                      <th style="width: 9%" class="text-center">
-                        File
+                      <th>
+                        Download File
                       </th>
-                      <th style="width: 20%" class="text-center">
-                        Aksi File
-                      </th>
-                      <th style="width: 20%" class="text-center">
-                        Aksi Pengiriman Konten
+                      <th>
+                        Persetujuan
                       </th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody class="text-center">
                     <tr>
                       <td>1</td>
                       <td class="request-name"><a href="#">Anissa</a></td>
+                      <td class="request-number"><a href="#">08123456789</a></td>
                       <td class="request-subject"><b>Article tentang pahlawan</b></td>
                       <td class="request-time">5 mins ago</td>
                       <td class="request-download"><i class="fas fa-download"></i></td>
-                      <td class="project-actions text-right">
-                        <a class="btn btn-primary btn-sm" href="#">
-                          <i class="fas fa-folder">
-                          </i>
-                          Disetujui
-                        </a>
-                        <a class="btn btn-warning btn-sm" href="#">
-                          <i class="fas fa-trash">
-                          </i>
-                          Tidak Disetujui
-                        </a>
-                      </td>
-                      <td class="project-actions text-right">
+                      <td class="project-actions">
                         <a class="btn btn-success btn-sm" href="#">
-                          <i class="fas fa-folder">
+                          <i class="fas fa-check">
                           </i>
                           Terima
                         </a>
                         <a class="btn btn-danger btn-sm" href="#">
-                          <i class="fas fa-trash">
+                          <i class="fas fa-times">
                           </i>
                           Tolak
                         </a>

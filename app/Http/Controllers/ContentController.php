@@ -9,16 +9,16 @@ use App\Models\Content;
 
 class ContentController extends Controller
 {
-    public function index()
+    public function view()
     {
         return view('admin.post_request');
     }
 
-    public function viewText($id)
-    {
-        $content = Content::where('type', '=', 'text')->find($id);
-        return view('view_text', compact('content'));
-    }
+    // public function viewText($id)
+    // {
+    //     $content = Content::where('type', '=', 'text')->find($id);
+    //     return view('view_text', compact('content'));
+    // }
     public function viewVideo($id)
     {
         $content = Content::where('type', '=', 'video')->find($id);
