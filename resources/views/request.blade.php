@@ -115,11 +115,14 @@
                     <th style="width: 20%">
                       Nama
                     </th>
-                    <th style="width: 20%">
+                    <th style="width: 10%">
                       File
                     </th>
-                    <th style="width: 1%" class="text-center">
-                      Status
+                    <th style="width: 20%" class="text-center">
+                      Status Penerimaan File
+                    </th>
+                    <th style="width: 20%" class="text-center">
+                      Status Konten
                     </th>
                   </tr>
                 </thead>
@@ -134,7 +137,10 @@
                     <td>
                       <i class="fas fa-download"></i>
                     </td>
-                    <td class="project-state">
+                    <td class="project-state text-center">
+                      <span class="btn btn-primary" style="cursor: default;">Disetujui</span>
+                    </td>
+                    <td class="project-state text-center">
                       <span class="btn btn-success" style="cursor: default;">Sukses</span>
                     </td>
                   </tr>

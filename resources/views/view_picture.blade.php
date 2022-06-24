@@ -33,10 +33,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link active" href="#">Informasi Publik</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Acara Internal</a></li>
-          <li class="nav-item"><a class="nav-link" href="#">Acara Eksternal</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{route('request')}}">Request</a></li>
+          <li class="nav-item"><a class="nav-link active" href="{{ route('home') }}">Informasi Publik</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('internal') }}">Acara Internal</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('external') }}">Acara Eksternal</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('request') }}">Request</a></li>
         </ul>
       </div>
     </div>
@@ -228,54 +228,86 @@
         </section>
 
         <!-- card -->
-        <div class="row" style="padding-top: 100px; padding-bottom: 0">
+        <div class="row" style="padding-top: 60px; padding-bottom: 0">
           <div class="text-truncate">
             <span style="font-weight: bold"></span>
-            <p><a href="#" style="color: black">See All the Post</a><i
+            <p><a href="#" style="color: black"> Lihat Semua Postingan </a><i
                 class="fa-solid fa-arrow-right-long"></i></p>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-danger" style="padding-top: -30px;">Teknik Elektro
+                Industri</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-info" style="padding-top: -30px;">Teknik
+                Komputer</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-warning" style="padding-top: -30px;">Teknik
+                Elektronika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
+                Informatika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
@@ -412,9 +444,12 @@
   <!-- Font Awesome icons (free version)-->
   <script src="https://kit.fontawesome.com/9706c69056.js" crossorigin="anonymous"></script>
   <!--Jquery-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+  </script>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk="
+    crossorigin="anonymous"></script>
 
   <script>
     $(document).ready(function() {

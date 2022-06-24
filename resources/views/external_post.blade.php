@@ -287,22 +287,22 @@
 
       <!-- Right -->
       <div>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-facebook-f"></i>
         </a>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-twitter"></i>
         </a>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-google"></i>
         </a>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-instagram"></i>
         </a>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-linkedin"></i>
         </a>
-        <a href="" class="text-white me-4">
+        <a href="" class="text-decoration-none text-white me-4">
           <i class="fab fa-github"></i>
         </a>
       </div>
@@ -312,7 +312,7 @@
 
     <!-- Section: Links  -->
     <section class="">
-      <div class="container text-center text-md-start mt-5">
+      <div class="container text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->

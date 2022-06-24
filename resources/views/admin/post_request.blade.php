@@ -240,12 +240,49 @@
               </div>
               <div class="table-responsive mailbox-messages">
                 <table class="table table-hover table-striped">
+                  <thead>
+                    <tr>
+                      <th style="width: 1%">
+                        No.
+                      </th>
+                      <th style="width: 20%">
+                        Nama
+                      </th>
+                      <th style="width: 20%">
+                        Nama File
+                      </th>
+                      <th style="width: 10%">
+                        Waktu
+                      </th>
+                      <th style="width: 9%" class="text-center">
+                        File
+                      </th>
+                      <th style="width: 20%" class="text-center">
+                        Aksi File
+                      </th>
+                      <th style="width: 20%" class="text-center">
+                        Aksi Pengiriman Konten
+                      </th>
+                    </tr>
+                  </thead>
                   <tbody>
                     <tr>
-                      <td class="request-name"><a href="#">Nama User</a></td>
-                      <td class="request-subject"><b>Nama File</b></td>
+                      <td>1</td>
+                      <td class="request-name"><a href="#">Anissa</a></td>
+                      <td class="request-subject"><b>Article tentang pahlawan</b></td>
                       <td class="request-time">5 mins ago</td>
                       <td class="request-download"><i class="fas fa-download"></i></td>
+                      <td class="project-actions text-right">
+                        <a class="btn btn-primary btn-sm" href="#">
+                          <i class="fas fa-folder">
+                          </i>
+                          Disetujui
+                        </a>
+                        <a class="btn btn-warning btn-sm" href="#">
+                          <i class="fas fa-trash">
+                          </i>
+                          Tidak Disetujui
+                        </a>
                       </td>
                       <td class="project-actions text-right">
                         <a class="btn btn-success btn-sm" href="#">

@@ -38,10 +38,10 @@
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav text-uppercase ms-auto py-4 py-lg-0">
-          <li class="nav-item"><a class="nav-link" href="{{route('home')}}">Informasi Publik</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{route('internal')}}">Acara Internal</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{route('external')}}">Acara Eksternal</a></li>
-          <li class="nav-item"><a class="nav-link" href="{{route('request')}}">Request</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('home') }}">Informasi Publik</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('internal') }}">Acara Internal</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('external') }}">Acara Eksternal</a></li>
+          <li class="nav-item"><a class="nav-link" href="{{ route('request') }}">Request</a></li>
         </ul>
       </div>
     </div>
@@ -52,9 +52,11 @@
     <div class="header-hero">
       <div class="container" style="padding-top: 50px; padding-bottom: 5px;">
         <div class="text-center" style="padding-top: 5px; padding-bottom: 5px">
-          <button type="button" class="btn btn-warning">Creator</button>
-          <p>9 Mei 2022</p>
           <h2 class="section-heading text-uppercase">Judul</h2>
+          <button type="button" class="btn btn-info" style="padding-top: -30px;">Teknik
+                  Komputer</button>
+          <p>Kategori</p>
+          <p>9 Mei 2022</p>
           <p>Created By : Septiana Dyah Anissawati</p>
         </div>
         <div class="card box-shadow d-flex align-items-center w-100 h-100">
@@ -178,51 +180,83 @@
         <div class="row" style="padding-top: 100px; padding-bottom: 0">
           <div class="text-truncate">
             <span style="font-weight: bold"></span>
-            <p><a href="#" style="color: black">See All the Post</a><i
+            <p><a href="#" style="color: black">Lihat Semua Postingan </a><i
                 class="fa-solid fa-arrow-right-long"></i></p>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-danger" style="padding-top: -30px;">Teknik Elektro
+                Industri</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-info" style="padding-top: -30px;">Teknik
+                Komputer</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-warning" style="padding-top: -30px;">Teknik
+                Elektronika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
         <div class="col-sm-6 col-md-4 col-lg-3">
           <div class="card box-shadow">
             <img class="card-img-top" src="{{ asset('/img/photo1.png') }}" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the
-                bulk of the card's content.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="card-body text-left">
+              <button type="button" class="btn btn-primary" style="padding-top: -30px;">Teknik
+                Informatika</button>
+              <div class="row">
+                <p>Kategori</p>
+              </div>
+              <div class="row">
+                <p>9 Mei 2022</p>
+              </div>
+              <div class="row">
+                <p>Hidup sdalah perjuangan yang mana terika oleh suatu hal yang belum pasti <i
+                    class="fas fa-arrow-right"></i></p>
+              </div>
             </div>
           </div>
         </div>
@@ -269,7 +303,7 @@
 
     <!-- Section: Links  -->
     <section class="">
-      <div class="container text-center text-md-start mt-5">
+      <div class="container text-left text-md-start mt-5">
         <!-- Grid row -->
         <div class="row mt-3">
           <!-- Grid column -->
@@ -290,7 +324,7 @@
             <!-- Links -->
             <h6 class="text-uppercase fw-bold">Products</h6>
             <hr class="mb-4 mt-0 d-inline-block mx-auto"
-              style="width: 60px; background-color: #7c4dff; height: 2px" />
+              style="width: 30px; background-color: #7c4dff; height: 2px" />
             <p>
               <a href="#!" class="text-dark">Informasi Publik</a>
             </p>
