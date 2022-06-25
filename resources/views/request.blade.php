@@ -70,9 +70,26 @@
                 </div>
 
                 <div class="form-group row">
+                  <label for="inputjurusan3" class="col-sm-2 col-form-label">Pilih Jurusan</label>
+                  <div class="col-sm-10">
+                    <select class="form-control" id="filter" name="filter">
+                  <option value=""></option>
+                  <option value="umum">Umum</option>
+                  <option value="informatika">Teknik Informatika</option>
+                  <option value="elektro">Teknik Elektronika</option>
+                  <option value="elin">Teknik Elektro Industri</option>
+                  <option value="tekkom">Teknik Komputer</option>
+                  <option value="meka">Teknik Mekatronika</option>
+                  <option value="mmb">Teknik Multimedia Broadcasting</option>
+                  <option value="telkom">Teknik Telekomunikasi</option>
+                  <option value="spe">Teknik Sistem Pembangkit Energi</option>
+                </select>
+                  </div>
+                </div>
+
+                <div class="form-group row">
                 <div class="input-group">
                   <label for="inputfile3" class="col-sm-2 col-form-label">Masukkan File</label>
-                  
                   <div class="col-sm-8">
                     <input type="file" class="custom-file-input" id="exampleInputFile">
                     <label class="custom-file-label" for="exampleInputFile">Pilih File</label>
