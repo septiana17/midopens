@@ -56,6 +56,10 @@ Route::get('/view_text', function () {
     return view('view_text'); # diganti landing page
 });
 
+Route::get('/view_video', function() {
+    return view('view_video');
+});
+
 Route::group(['prefix' => '/admin','middleware'=>'auth'], function ()
 {
     # dashboard utama
